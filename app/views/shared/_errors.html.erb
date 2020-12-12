@@ -1,0 +1,15 @@
+
+<div class="container mt-4">
+  <% if @article.errors.any? %>
+     <div class= "alert alert-danger alert-dismissible fade show" role= "alert">
+  	  <h4 class= "alert-heading"> Compila tutti i campi e inserisci una mail valida per inviare il messaggio </h4>
+      <ul>
+        <% @article.errors.full_messages.each do |msg| %>
+         <li><%= msg %></li>
+        <% end %>
+     </ul>
+    </div>
+  <% end %>
+
+  <%= link_to "Back to home page", root_path %>
+</div>

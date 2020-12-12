@@ -1,0 +1,27 @@
+<h1>Messages listing page</h1>
+
+	<table>
+    <thead>
+        <tr>
+          <th> Name</th>
+        	<th> Email</th>
+          <th> Subject</th>
+          <th> Message</th>
+          <th> Time</th>
+					<th> Delete </th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <% @articles.each do |article| %>
+            <tr>
+              <td><%= article.name %></td>
+	            <td><%= article.email %></td>
+              <td><%= article.subject %></td>
+              <td><%= word_wrap(article.message, :line_width => 40) %></td>
+              <td><%= article.created_at.strftime("%d %b. %Y") %></td>
+							<td><%= link_to 'Delete', article_path(article.id), method: :delete %> </td>
+            </tr>
+        <% end %>
+    </tbody>
+</table>

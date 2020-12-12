@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>4 for English </title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
+
+
+  <!-- =======================================================
+  * Template Name: Reveal - v2.1.0
+  * Template URL: https://bootstrapmade.com/reveal-bootstrap-corporate-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar" class="d-none d-lg-block">
+    <div class="container clearfix">
+    <!--  <div class="contact-info float-left">
+        <i class="fa fa-envelope-o"></i> <a href="mailto:francesgallito.ny@gmail.com">francesgallito.ny@gmail.com</a>
+        <i class="fa fa-phone"></i> +39 347-5628-822
+      </div> -->
+      <div class="social-links float-right">
+        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+      </div>
+    </div>
+  </section><!-- End Top Bar-->
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="container">
+
+
+      <div id="logo" class="pull-left">
+        <%= image_tag("logo.jpg", size: "70x60", id: "logo") %>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><%= link_to "Home", root_path %> </li>
+          <li><a href="#about">Metodo didattico</a></li>
+          <li><a href="#services">Corsi</a></li>
+          <li><a href="#clients">Collaborazioni</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li class="menu-has-children"><a href="">Approfondimenti</a>
+            <ul>
+              <li><a href="#team">Chi sono</a></li>
+              <li><%= link_to "Lezioni", lessons_path %></li>
+              <li><%= link_to "Course of Italian words and gestures", italian_course_path %></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contattami</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Intro Section ======= -->
+
+
+  <section id="intro">
+
+    <div class="intro-content">
+      <h2> <span>4 for English</span> is... School<br></h2>
+      <h3> Imparare l'Inglese non è mai stato così cool!</h3>
+      <div>
+        <a href="#services" class="btn-projects">Proposta corsi</a>
+        <a href="#call-to-action" class="btn-get-started">Valutiamo il tuo livello</a>
+      </div>
+    </div>
+
+
+  </section><!-- End Intro Section -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about">
+      <div class="container mt-4">
+        <div class="row">
+          <div class="col-lg-8 about-img">
+              <%= image_tag("copertina.jpg") %>
+          </div>
+
+          <div class="col-lg-4 content">
+            <h2>Cos'è 4 for English?</h2>
+            <ul>
+              <li> ► è un innovativo metodo di apprendimento della lingua Inglese, testato e approvato da centinaia di studenti di tutto il mondo</li>
+              <li> ► si basa su uno stesso schema matematico diviso per 4, visivo e ricorrente per tutte le strutture grammaticali. Significa IMPARARE UNA SOLA VOLTA PER TUTTE! </li>
+              <li> ► è frutto dello studio e di approfondimenti sulla teoria della didattica messi a punto dopo più di quindici anni di insegnamento della lingua Inglese </li>
+              <li> ► tutti i corsi proposti dalla <span id="forenglish">4 for English</span> <span id="ischool">is... School</span> si basano su questo metodo didattico. Scegli il corso che preferisci!  </li>
+            </ul>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services">
+      <div class="container">
+        <div class="section-header">
+          <h2>Corsi</h2>
+          <p>Per coprire tutte le possibili esigenze dei suoi studenti, la <span id="forenglish">4 for English</span> <span id="ischool">is... School</span> offre diverse tipologie di corsi. <br> Cosa aspetti? Seleziona il corso che ti interessa. </p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6">
+            <div id= "online" class="box">
+              <div class="icon"><i class="fa fa-bar-chart"></i></div>
+              <h4 class="title"><%= link_to "Corsi online privati per singoli o per gruppi", lessons_path %></h4>
+              <p class="description"> Gli argomenti affrontati durante il corso saranno concordati a seguito di un breve incontro conoscitivo.
+                <br> <a href="#contact"> Scrivi alla insegnante che ti ricontatterà entro 24 ore </a> </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div id= "business" class="box">
+              <div class="icon"><i class="fa fa-picture-o"></i></div>
+              <h4 class="title"><%= link_to "Business English per le aziende", lessons_path %></h4>
+              <p class="description">Corsi di Inglese dedicati e specializzati per rispondere alle esigenze linguistiche delle aziende italiane e internazionali.
+              <br><strong>Se sei un'azienda</strong>, scrivi <a href="mailto:francesgallito.ny@gmail.com">qua</a> per maggiori informazioni. </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div id= "next" class="box">
+              <div class="icon"><i class="fa fa-shopping-bag"></i></div>
+              <h4 class="title"><a href="">Pacchetti tutorial</a></h4>
+              <p class="description">Scegli il pacchetto adatto al tuo livello. Ogni pacchetto contiene lezioni video, esercizi da svolgere con soluzioni e spiegazioni.
+              <br>
+                <a href="#call-to-action"> Fissa un colloquio con la insegnante per capire il tuo livello </a>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div id= "next" class="box">
+              <div class="icon"><i class="fa fa-map"></i></div>
+              <h4 class="title"><a href="">Full immersion (min. 2 persone)</a></h4>
+              <p class="description"> Vasto programma di attività disegnato per rendere fluente la conversazione in lingua Inglese, con possibilità di tour guidati per visitare luoghi suggestivi. Ovviamente, tutto in Inglese!
+              <br>
+               Per maggiori dettagli <a href="#"> clicca qui </a></p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div id= "next" class="box">
+              <div class="icon"><i class="fa fa-map"></i></div>
+              <h4 class="title"><a href="">Inglese per viaggiare</a></h4>
+              <p class="description">Che sia un viaggio di lavoro o una vacanza, l'Inglese è una risorsa indispensabile. Il corso è studiato per fornire l'adeguata conoscenza della lingua Inglese nelle diverse situazioni: aeroporti, alberghi, ristoranti, muoversi in città...
+              <br> <a href="#contact"> Scrivi alla insegnante che ti ricontatterà entro 24 ore </a>  </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div id="italiano" class="box">
+              <div class="icon"><i class="fa fa-map"></i></div>
+              <li><%= link_to "Course of Italian words and gestures", italian_course_path %></li>
+              <p class="description"> Have you ever wished to speak the romantic Italian language? And to know the meaning of all the Italian fantastic gestures? Here is a beginner course for you!
+              <br> <a href="#contact"> Contact me to start </a>  </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+
+    <!-- ======= Clients Section ======= -->
+    <section id="clients">
+      <div class="container">
+        <div class="section-header">
+          <h2>Collaborazioni</h2>
+          <p>Nel corso degli anni, <i>4 For English</i> ha semplificato l'apprendimento della lingua Inglese per studenti provenienti da molteplici realtà. Eccone alcune! </p>
+        </div>
+
+        <row>
+
+          <div class="col-lg-2 about-img inline-block">
+              <%= image_tag("luiss.jpg") %>
+          </div>
+          <div class="col-lg-1 about-img inline-block">
+              <%= image_tag("sussex.png") %>
+          </div>
+          <div class="col-lg-1 about-img inline-block">
+              <%= image_tag("british.gif") %>
+          </div>
+          <div class="col-lg-1 about-img inline-block">
+              <%= image_tag("ef.jpg") %>
+          </div>
+          <div class="col-lg-2 about-img inline-block">
+              <%= image_tag("lal.jpg") %>
+          </div>
+          <div class="col-lg-1 about-img inline-block">
+              <%= image_tag("enterprise.jpg") %>
+          </div>
+          <div class="col-lg-1 about-img inline-block">
+              <%= image_tag("28.jpg") %>
+          </div>
+          <div class="col-lg-2 about-img inline-block">
+              <%= image_tag("Trelleborg.png") %>
+          </div>
+
+        </row>
+
+    </section><!-- End Clients Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <h2>Testimonials</h2>
+        </div>
+          <div class="testimonial-item">
+            <p>
+              "Frances was my English teacher over the last 8 months and for me has been a pleasure to work with her. Thanks to her approach and teaching method, I have been able to improve and deepen my English knowledge. Additionally, I've really appreciated her book 4 for English. The structure is very useful. For me, it has been a very good way to improve the language"
+            </p>
+
+            <h6>Gianluca Palmieri</h6>
+            <h4><strong>Business and Marketing Analyst</strong></h4>
+          </div>
+
+          <div class="testimonial-item">
+            <p>
+              "I would like to thank Frances because she was my first real English teacher. In the past I have followed several English courses and all the lessons were boring. In my opinion the great strengths of Frances are the communication and her ability to custom the lessons to her students, because for sure she loves her job. Her method in teaching was very stimulating. My approach to the English language has improved for the first time and this has been possible thanks to her"
+
+            </p>
+
+            <h6>Isabella Panetta</h6>
+            <h4><strong> Marketing Assistant</strong></h4>
+          </div>
+
+          <div class="testimonial-item">
+            <p>
+              "For me it was an important way to approach the English lessons. Her skill to create an interesting environment and a high level experience was for me a great opportunity to learn English. The structures from her book 4 for English helped me understand the different verb tenses and it was easier for me to comprehend the English language. I have improved the English language and the efficiency on my job. Thank you"
+
+            </p>
+
+            <h6>Augusto Gilardi</h6>
+            <h4><strong>Reporting Manager</strong></h4>
+          </div>
+
+          <div class="testimonial-item">
+            <p>
+              "I would like to thank British School for the opportunity to study with a GREAT teacher from New York. She is professional, reliable, meticolous and knowledgeable. For me she has been the perfect teacher to learn and improve my English"
+
+            </p>
+
+            <h6>Cristina Melandri</h6>
+            <h4><strong>Manager Assistant</strong></h4>
+          </div>
+
+          <div class="testimonial-item">
+            <p>
+              "Great job!!! Your teacher rating for Summer 2018 is 4.885. Well done on that! Ranking top 10 International best teachers"
+            </p>
+
+            <h6>EF</h6>
+            <h4><strong>Education First</strong></h4>
+          </div>
+
+          <div class="testimonial-item">
+            <p>
+              "Thank you Frances. Your empathy, professionality, qualities and initiatives for the teaching approach have been more than qualified. It was immediately obvious that you have a great report with the students. The atmosphere in your classroom is supportive, relaxed and enjoyable. We appreciated greatly having you in our team"
+            </p>
+
+            <h6>LAL UK</h6>
+            <h4><strong>Sussex University</strong></h4>
+          </div>
+
+          <div class="testimonial-item">
+            <p>
+              "Enrolling to English schools represent a new challenge every year. This year I had a new teacher from NY, Frances. I have found her explanation very clear and methods of teaching very useful and efficient. Every lesson was different from the other. It was very interesting and never boring"
+            </p>
+
+            <h6>Andrea</h6>
+            <h4><strong>Student</strong></h4>
+          </div>
+
+          <div class="testimonial-item">
+            <p>
+              "I was followed by Mrs Frances Gallito during my upper-intermediate Business English course. I very much liked and appreciated her structured way of teaching which gave me a real and great improvement of my knowledge. The structure of her book helped me to improve the understanding of different sentence structures and verb tenses, making everything easier to understand"
+            </p>
+            <h6>Francesco Rembadi</h6>
+            <h4><strong>Quality Manager</strong></h4>
+          </div>
+
+          <div class="testimonial-item">
+            <p>
+              "Il corso è stato efficace e molto interessante. Utile per poter approfondire la lingua Inglese. La nostra teacher Frances è stata molto brava sia nei metodi che nella didattica, capace di rendere la lezione sempre stimolante. Il suo libro 4 for English è comprensibile e ben strutturato, capace di farti apprendere facilmente i tempi verbali"
+            </p>
+            <h6>Divisione Esercito 28^ Pavia</h6>
+            <h4><strong>Student</strong></h4>
+          </div>
+
+          <div class="testimonial-item">
+            <p>
+              "Da 1 a 10, voto 10! Per i suoi metodi di insegnamento efficaci. 4 for English è stato molto utile per riuscire a seguire tutte le lezioni"
+            </p>
+            <h6>Divisione Esercito 28° Pavia</h6>
+            <h4><strong>Student B1</strong></h4>
+          </div>
+
+          <div class="testimonial-item">
+            <p>
+              "Frances provided exhaustive information about every topic. She is very skilled, she has adopted a tutorial approach that immediately improved my understanding. She is competent and experienced in both languages. Definetely it was a pleasure learning English with her"
+            </p>
+            <h6>Gianpaolo</h6>
+            <h4><strong>British School student</strong></h4>
+          </div>
+
+          <div class="testimonial-item">
+            <p>
+              "Ho partecipato a diversi programmi di full-immersion estivi organizzati dalla teacher Frances, dove ho avuto modo insieme ad altri studenti di parlare Inglese e di divertirmi tanto in escursioni, visite a luoghi di interesse e attività come yoga, trekking e corsi di cucina"
+            </p>
+            <h6>Natascia</h6>
+            <h4><strong>British School student</strong></h4>
+          </div>
+
+        </div>
+
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Call To Action Section ======= -->
+    <section id="call-to-action">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9 text-center text-lg-left">
+            <h3 class="cta-title">Call To Action</h3>
+            <p class="cta-text"> Prima di scegliere il corso, definiamo insieme il tuo livello attuale di inglese perchè tu possa avere la migliore esperienza in questa scuola. La valutazione è gratuita e avviene tramite un breve colloquio sostenuto direttamente con la insegnante.</p>
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center mt-4">
+            <a class="cta-btn align-middle" href="mailto:francesgallito.ny@gmail.com">Fissa un colloquio</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Call To Action Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team">
+      <div class="container">
+        <div class="section-header">
+          <h2>Insegnante</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="details">
+                <h4>Frances Gallito</h4>
+                <div class="social">
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                  <a href=""><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+              <br>
+                <%= image_tag("pic.jpg", height: 190) %>
+            </div>
+          </div>
+          <div class="col-lg-9 col-md-6">
+            <div class="details">
+              <br><br><br><br>
+              <p align="justify"> Vissuta e cresciuta a <strong>New York (USA)</strong>, dove ha completato gli studi obbligatori. Ha frequentato corsi di Business and Market Development e si è qualificata nell'insegnamento dell'Inglese come seconda lingua ESL English. Ha ottenuto la certificazione <strong>CertTesol dalla Trinity College di Londra</strong>, qualifica questa valida per l'insegnamento dell'Inglese a livello internazionale.<br> Ha lavorato per diverse importanti realtà come il
+                <strong>Centro Italiano Didattico di Roma, la Comunità Europea, </strong> rinomate <strong>Università, Colleges, Scuole</strong> e <strong>Aziende</strong> in Italia, USA, UK, Spagna e Malta. Autrice del libro <strong><i>4 for English</i></strong>&copy;, specializzato nella didattica di tutte le strutture grammaticali fondamentali della lingua Inglese. Oggi vive in Italia e può vantare di oltre 15 anni di esperienza nell'insegnamento.<p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- End Team Section -->
+
+    <!-- ======= Student experiences Section ======= -->
+    <section id="team">
+      <div class="container">
+        <div class="section-header">
+          <h2>Esperienze</h2>
+        </div>
+        <div class="row justify-content-around">
+          <div class="col-4">
+            <%= image_tag("class1.jpg", height: 300,  width: 450) %>
+          </div>
+          <div class="col-5">
+            <%= image_tag("class2.jpg", height: 300, width: 450) %>
+          </div>
+        </div>
+        <br>
+        <div class="row justify-content-around">
+          <div class="col-4">
+            <%= image_tag("class3.jpg", height: 300, width: 450) %>
+          </div>
+          <div class="col-5">
+            <%= image_tag("class5.jpg", height: 300, width: 450) %>
+          </div>
+        </div>
+        <br>
+        <div class="row justify-content-around">
+          <div class="col-3">
+            <%= image_tag("class4.jpg", height: 300) %>
+          </div>
+          <div class="col-3">
+            <%= image_tag("class6.jpg", height: 300) %>
+          </div>
+          <div class="col-3">
+            <%= image_tag("class7.jpg", height: 300) %>
+          </div>
+        </div>
+        <br>
+        <div class="row justify-content-around">
+          <div class="col-4">
+            <%= image_tag("class8.jpg", height: 300, width:450) %>
+          </div>
+          <div class="col-5">
+            <%= image_tag("class9.jpg", height: 300, width:450) %>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2>Contatti</h2>
+        </div>
+
+        <div class="row contact-info">
+
+        </div>
+
+      <div class="container mb-4">
+        <iframe src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Pesaro%20(PU)+(My%20Business%20Name)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+          <div class="form">
+      			<%= form_with scope: :article, url: articles_path, class: "php-email-form", local: true do |f| %>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <%= f.text_field :name, id: "name", class: "form-control", placeholder: "Your Name" %>
+                  <div class="validate"></div>
+      					</div>
+                <div class="form-group col-md-6">
+                  <%= f.text_field :email, id: "email", class: "form-control", placeholder: "Your Email" %>
+                  <div class="validate"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <%= f.text_field :subject, id: "subject", class: "form-control", placeholder: "Subject" %>
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <%= f.text_area :message, id: "message", class: "form-control", rows: 5, placeholder: "Message" %>
+                <div class="validate"></div>
+              </div>
+              <div class="form-group row justify-content-center">
+                <%= f.submit class: "button", value: "Send Message" %>
+      			  <% end %>
+      				</div>
+
+          </div>
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright 2021 <strong>4 for English - Fundamental English Sentence Structures </strong>. All Rights Reserved
+      </div>
+    <div class="credits">
+
+      Designed by <%= link_to "Alessandro Ciocchetti", "https://www.linkedin.com/in/alessandro-ciocchetti-281217152/", target: "_blank", rel: "noopener noreferrer" %> for Frances Gallito
+
+      </div>
+
+    </div>
+
+  </footer>
+  <!-- End Footer -->
+
+
+</body>
+
+</html>
