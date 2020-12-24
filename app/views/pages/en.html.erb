@@ -32,7 +32,7 @@
         <i class="fa fa-phone"></i> +39 347-5628-822
       </div> -->
       <div class="social-links float-right">
-        <strong>IT</strong> <%= link_to image_tag("bf.jpg", size: "20x20", alt: "British flag"), en_path %>
+        <strong>EN</strong> <%= link_to image_tag("if.jpg", size: "20x20", alt: "Italian flag"), root_path %>
         <!--
         <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
         <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a> -->
@@ -52,18 +52,18 @@
       <nav id="nav-menu-container">
         <ul class="nav-menu">
           <li class="menu-active"><%= link_to "Home", root_path %> </li>
-          <li><a href="#about">Metodo didattico</a></li>
-          <li><a href="#services">Corsi</a></li>
-          <li><a href="#clients">Collaborazioni</a></li>
+          <li><a href="#about">Teaching method</a></li>
+          <li><a href="#services">Courses</a></li>
+          <li><a href="#clients">Collaborations</a></li>
           <li><a href="#testimonials">Testimonials</a></li>
-          <li class="menu-has-children"><a href="">Approfondimenti</a>
+          <li class="menu-has-children"><a href="">More</a>
             <ul>
-              <li><a href="#team">Chi sono</a></li>
-              <li><%= link_to "Lezioni", lessons_path %></li>
+              <li><a href="#team">Who I am</a></li>
+              <li><%= link_to "Lessons", lessons_path %></li>
               <li><%= link_to "Course of Italian words and gestures", italian_course_path %></li>
             </ul>
           </li>
-          <li><a href="#contact">Contatti</a></li>
+          <li><a href="#contact">Contact me</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
@@ -76,10 +76,10 @@
 
     <div class="intro-content">
       <h2> <span>4 for English</span>  School<br></h2>
-      <h3> Imparare l'Inglese non è mai stato così cool!</h3>
+      <h3> Learning English has never been so cool!</h3>
       <div>
-        <a href="#services" class="btn-projects">Proposta corsi</a>
-        <a href="#call-to-action" class="btn-get-started">Valutiamo il tuo livello</a>
+        <a href="#services" class="btn-projects">Courses</a>
+        <a href="#call-to-action" class="btn-get-started">Test your level</a>
       </div>
     </div>
 
@@ -93,16 +93,16 @@
       <div class="container mt-4">
         <div class="row">
           <div class="col-lg-8 about-img">
-              <%= image_tag("copertina.jpg", alt: "Libro di Frances Gallito") %>
+              <%= image_tag("copertina.jpg", alt: "Frances Gallito's book") %>
           </div>
 
           <div class="col-lg-4 content">
-            <h2>Cos'è 4 for English?</h2>
+            <h2>4 for English is... </h2>
             <ul>
-              <li> ► è un innovativo metodo di apprendimento della lingua Inglese, testato e approvato da centinaia di studenti di tutto il mondo</li>
-              <li> ► si basa su uno stesso schema matematico diviso per 4, visivo e ricorrente per tutte le strutture grammaticali. Significa imparare una sola volta per tutte! </li>
-              <li> ► è frutto di ricerche e di approfondimenti sulla teoria della didattica messi a punto dopo più di quindici anni di insegnamento della lingua Inglese </li>
-              <li> ► tutti i corsi proposti dalla <span id="forenglish">4 for English</span> <span id="ischool"> School</span> si basano su questo metodo didattico. Scegli il corso che preferisci! <br><span id="forenglish"><u>Il libro sarà presto acquistabile online</u></span> </li>
+              <li> ► a highly innovative method that facilitates the understanding of all the English Sentence Structures, tested and approved by hundreds of students from all over the world</li>
+              <li> ► based on an easy mathematical scheme divided by 4 of all the English Structures and verb tenses. It means learn once and for all! </li>
+              <li> ► the result of research, insights and teaching practice achieved from my 15 years of teaching English to International students</li>
+              <li> ► every course of the <span id="forenglish">4 for English</span> <span id="ischool"> School</span> is based on this method. Choose the best one for you! <br><span id="forenglish"><u>My book will be soon available on sale</u> </span></li>
             </ul>
 
           </div>
@@ -115,8 +115,8 @@
     <section id="services">
       <div class="container">
         <div class="section-header">
-          <h2>Corsi</h2>
-          <p>Per coprire tutte le possibili esigenze dei suoi studenti, la <span id="forenglish">4 for English</span> <span id="ischool"> School</span> offre diverse tipologie di corsi. <br> Cosa aspetti? Seleziona il corso che ti interessa. </p>
+          <h2>Courses</h2>
+          <p><span id="forenglish">4 for English</span> <span id="ischool"> School</span> offers different types of courses, meeting all the possible needs of the students. <br> What are you waiting for? Choose your best fit and join us. </p>
         </div>
 
         <div class="row">
@@ -124,27 +124,27 @@
           <div class="col-lg-6">
             <div id= "online" class="box">
               <div class="icon"><i class="fa fa-bar-chart"></i></div>
-              <h4 class="title"><%= link_to "Corsi online privati per singoli o per gruppi", lessons_path %></h4>
-              <p class="description"> Gli argomenti affrontati durante il corso saranno concordati a seguito di un breve incontro conoscitivo.
-                <br> <a href="#contact"> Scrivi alla insegnante </a> </p>
+              <h4 class="title"><%= link_to "Online courses one-to-one or for groups", lessons_path %></h4>
+              <p class="description"> All the different topics will be discussed priorly and followed up after an introductive meeting with the teacher.
+                <br> <a href="#contact"> Contact the teacher </a> </p>
             </div>
           </div>
 
           <div class="col-lg-6">
             <div id= "business" class="box">
               <div class="icon"><i class="fa fa-picture-o"></i></div>
-              <h4 class="title"><%= link_to "Business English per le aziende", lessons_path %></h4>
-              <p class="description">Corsi di Inglese dedicati e specializzati per rispondere alle esigenze linguistiche delle aziende italiane e internazionali.
-              <br><strong>Se sei un'azienda</strong>, scrivi <a href="mailto:school@4forenglish.com">qua</a> per maggiori informazioni. </p>
+              <h4 class="title"><%= link_to "Business English", lessons_path %></h4>
+              <p class="description">These specialized courses are thought to be personalized and proposed to companies of different fields.
+              <br><strong>If you are a company</strong>, write <a href="mailto:school@4forenglish.com">here</a> for further info. </p>
             </div>
           </div>
 
           <div class="col-lg-6">
             <div id= "travel" class="box">
               <div class="icon"><i class="fa fa-map"></i></div>
-              <h4 class="title"><%= link_to "Inglese per viaggiare", lessons_path %></h4>
-              <p class="description">Che sia un viaggio di lavoro o una vacanza, l'Inglese è una risorsa indispensabile. Il corso è studiato per fornire l'adeguata conoscenza della lingua Inglese nelle diverse situazioni: aeroporti, alberghi, ristoranti, muoversi in città...
-              <br> <a href="#contact"> Scrivi alla insegnante </a> </p>
+              <h4 class="title"><%= link_to "English for travelling", lessons_path %></h4>
+              <p class="description">If you are going on a holiday or on a business trip... English is fundamental. This course is studied to give you all the necessary tools to travel in every situation: airports, hotels, restaurants or just getting around.
+              <br> <a href="#contact"> Contact the teacher</a></p>
             </div>
           </div>
 
@@ -161,9 +161,9 @@
             <div id= "next" class="box">
               <div class="icon"><i class="fa fa-shopping-bag"></i></div>
               <h4 class="title"><a href="">4 for English Masterclass</a></h4>
-              <p class="description">Scegli il pacchetto adatto al tuo livello. Ogni pacchetto contiene lezioni video, esercizi da svolgere con soluzioni e spiegazioni.
+              <p class="description">Choose the best programme for your level of English. Each programme contains video-lessons and exercises with solutions and explanations.
               <br>
-                <a href="#call-to-action"> Fissa un colloquio con la insegnante per capire il tuo livello </a>
+                <a href="#call-to-action"> Schedule a meeting with the teacher to estimate your English level </a>
             </div>
           </div>
 
@@ -171,9 +171,9 @@
             <div id= "next" class="box">
               <div class="icon"><i class="fa fa-map"></i></div>
               <h4 class="title"><a href="">Full immersion</a></h4>
-              <p class="description"> Vasto programma di attività disegnato per rendere fluente la conversazione in lingua Inglese, con possibilità di tour guidati per visitare luoghi suggestivi. Ovviamente, tutto in Inglese!
+              <p class="description"> Wide programme of activities will be proposed to enchant your English conversation skills, including guided tours in the most suggestive italian towns. Of course, all in English!
               <br>
-               Per maggiori dettagli <a href="#"> clicca qui </a></p>
+               Further info <a href="#"> here </a></p>
             </div>
           </div>
 
@@ -187,8 +187,8 @@
     <section id="clients">
       <div class="container">
         <div class="section-header">
-          <h2>Collaborazioni</h2>
-          <p>Nel corso degli anni, <i>4 For English</i> ha semplificato l'apprendimento della lingua Inglese per studenti provenienti da molteplici realtà. Eccone alcune! </p>
+          <h2>Collaborations</h2>
+          <p>During the years <i>4 For English</i> has semplified and facilitated the learning of the English language for students from different realities. Here are some! </p>
         </div>
 
         <row>
@@ -223,7 +223,6 @@
     </section><!-- End Clients Section -->
 
     <!-- ======= Testimonials Section ======= -->
-
     <section id="testimonials">
       <div class="container">
         <div class="section-header">
@@ -235,7 +234,7 @@
               "I have finally understood many English Sentence Structures. I miss you and Malta!"
             </p>
             <h6>Oliver </h6>
-            <h4><strong>International Young Learner - Copenaghen </strong></h4>
+            <h4><strong>International Young Learner - Copenaghen</strong></h4>
           </div>
 
           <div class="testimonial-item">
@@ -352,10 +351,11 @@
         <div class="row">
           <div class="col-lg-9 text-center text-lg-left">
             <h3 class="cta-title">Call To Action</h3>
-            <p class="cta-text"> Prima di scegliere il corso, definiamo insieme il tuo livello attuale di inglese perchè tu possa avere la migliore esperienza in questa scuola. La valutazione è gratuita e avviene tramite un breve colloquio sostenuto direttamente con la insegnante.</p>
+            <p class="cta-text"> Let's estimate together your English level in order for you to have the best experience in this school. The evaluation is free and it is accomplished
+            through a short conversation directly with the teacher.</p>
           </div>
           <div class="col-lg-3 cta-btn-container text-center mt-4">
-            <a class="cta-btn align-middle" href="mailto:school@4forenglish.com">Fissa un colloquio</a>
+            <a class="cta-btn align-middle" href="mailto:school@4forenglish.com">Schedule the meeting</a>
           </div>
         </div>
 
@@ -366,7 +366,7 @@
     <section id="team">
       <div class="container">
         <div class="section-header">
-          <h2>Insegnante</h2>
+          <h2>Teacher</h2>
         </div>
         <div class="row">
           <div class="col-lg-3 col-md-6">
@@ -379,15 +379,16 @@
                 </div>
               </div>
               <br>
-                <%= image_tag("pic.jpg", height: 190, alt: "foto profilo Frances Gallito") %>
+                <%= image_tag("pic.jpg", height: 190, alt: "profile picture of Frances Gallito") %>
             </div>
           </div>
           <div class="col-lg-9 col-md-6">
             <div class="details">
 
-              <p align="justify"> Vissuta e cresciuta a <strong>New York (USA)</strong>, dove ha completato gli studi obbligatori. Ha frequentato corsi di Business and Market Development, preso parte a diversi progetti Internazionali e si è qualificata nell'insegnamento dell'Inglese come seconda lingua ESL English. Ha ottenuto la certificazione <strong>CertTesol dalla Trinity College di Londra</strong>, qualifica questa valida per l'insegnamento dell'Inglese a livello internazionale.<br><br>
-                Ha lavorato per diverse importanti realtà come il
-                <strong>Centro Italiano Didattico di Roma, la Comunità Europea, </strong> rinomate <strong>Università, Colleges, Scuole</strong> e <strong>Aziende</strong> in Italia, USA, UK, Spagna e Malta. Autrice del libro <strong><i>4 for English</i></strong>&copy;, specializzato nella didattica di tutte le strutture grammaticali fondamentali della lingua Inglese. Oggi vive in Italia e può vantare di oltre 15 anni di esperienza nell'insegnamento. <br><br>"<i>Teaching is not a profession: it's a passion. Without passion for the subject and the desire for your students to learn... the future of a student will resemble a sunset instead of a sunrise</i>"<p>
+              <p align="justify"> Frances grow up and studied in <strong>New York (USA)</strong>. She is qualified in teaching English as a second language - ESL English. She has also achieved the certification <strong>CertTesol of the London Trinity College </strong> to teach internationally.
+                Her business background has brought her to take part in several International projects.<br><br>
+                 She has taught English and Business English in Italy, Spain, Malta and UK, for the European Community, important Corporations, schools and well-known International Universities. She has numerous years of experience teaching English to learners worldwide.<br>
+                 Author of her book <strong><i>4 for English</i></strong>&copy; designed to help students of every level. Her book can also be used by teacher as a resource on which to base lessons. Now she is living in Italy where she continues her passion for teaching. <br><br>"<i>Teaching is not a profession: it's a passion. Without passion for the subject and the desire for your students to learn... the future of a student will resemble a sunset instead of a sunrise</i>"<p>
             </div>
           </div>
 
@@ -399,44 +400,44 @@
     <section id="team">
       <div class="container">
         <div class="section-header">
-          <h2>Esperienze</h2>
+          <h2>Esperiences</h2>
         </div>
         <div class="row justify-content-around">
           <div class="col-4">
-            <%= image_tag("class1.jpg", height: 300,  width: 450, alt: "fotografia giovani studenti di inglese") %>
+            <%= image_tag("class1.jpg", height: 300,  width: 450, alt: "young english students photo") %>
           </div>
           <div class="col-5">
-            <%= image_tag("class2.jpg", height: 300, width: 450, alt: "fotografia giovani studenti di inglese") %>
+            <%= image_tag("class2.jpg", height: 300, width: 450, alt: "young english students photo") %>
           </div>
         </div>
         <br>
         <div class="row justify-content-around">
           <div class="col-4">
-            <%= image_tag("class3.jpg", height: 300, width: 450, alt: "fotografia studenti militari di inglese") %>
+            <%= image_tag("class3.jpg", height: 300, width: 450, alt: "adult english students photo") %>
           </div>
           <div class="col-5">
-            <%= image_tag("class5.jpg", height: 300, width: 450, alt: "fotografia giovani studenti di inglese") %>
+            <%= image_tag("class5.jpg", height: 300, width: 450, alt: "young english students photo") %>
           </div>
         </div>
         <br>
         <div class="row justify-content-around">
           <div class="col-3">
-            <%= image_tag("class4.jpg", height: 300, alt: "fotografia studenti adulti di inglese") %>
+            <%= image_tag("class4.jpg", height: 300, alt: "adult english students photo") %>
           </div>
           <div class="col-3">
-            <%= image_tag("class6.jpg", height: 300, alt: "fotografia insegnanti di inglese") %>
+            <%= image_tag("class6.jpg", height: 300, alt: "english teachers") %>
           </div>
           <div class="col-3">
-            <%= image_tag("class7.jpg", height: 300, alt: "fotografia giovani studenti di inglese") %>
+            <%= image_tag("class7.jpg", height: 300, alt: "young english students photo") %>
           </div>
         </div>
         <br>
         <div class="row justify-content-around">
           <div class="col-4">
-            <%= image_tag("class8.jpg", height: 300, width:450, alt: "fotografia insegnante di inglese") %>
+            <%= image_tag("class8.jpg", height: 300, width:450, alt: "englis teacher") %>
           </div>
           <div class="col-5">
-            <%= image_tag("class9.jpg", height: 300, width:450, alt: "fotografia studenti adulti di inglese. Do you speak English?") %>
+            <%= image_tag("class9.jpg", height: 300, width:450, alt: "adult english students photo. Do you speak English?") %>
           </div>
         </div>
       </div>
@@ -447,7 +448,7 @@
     <section id="contact">
       <div class="container">
         <div class="section-header">
-          <h2>Contatti</h2>
+          <h2>Contacts</h2>
         </div>
 
         <div class="row contact-info">

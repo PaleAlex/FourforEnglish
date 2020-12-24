@@ -43,7 +43,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #topbar {
   background: #fff;
-  padding: 10px 0;
+  padding: 5px 0;
   border-bottom: 1px solid #eee;
   font-size: 14px;
 }
@@ -68,8 +68,8 @@ h1, h2, h3, h4, h5, h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  padding: 20px 0;
-  height: 86px;
+  padding: 18px 0;
+  height: 80px;
   z-index: 997;
   background: #fff;
   box-shadow: 0px 6px 9px 0px rgba(0, 0, 0, 0.06);
@@ -483,6 +483,12 @@ section {
 
 #italiano {
   background-image: asset-url('italiano.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+#travel {
+  background-image: asset-url('travel.jpg');
   background-size: cover;
   background-position: center;
 }

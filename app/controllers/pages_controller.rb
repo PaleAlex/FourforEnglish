@@ -12,6 +12,7 @@ class PagesController < ApplicationController
   def italian
   end
 
-
+  def en
+  end
 
 end

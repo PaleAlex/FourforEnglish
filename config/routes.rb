@@ -5,6 +5,7 @@ Rails.application.routes.draw do
 
   get 'a-present-for-you', to: 'pages#present'
   get 'lessons', to: 'pages#lessons'
+  get 'en', to: 'pages#en'
 
   resources :articles, only: [:new, :create, :index, :destroy]
 
