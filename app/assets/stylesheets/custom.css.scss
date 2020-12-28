@@ -650,8 +650,23 @@ section {
   margin: 0 2px;
 }
 
+
+/* Carosello
+--------------------------------
+
+.carosello{
+  position: relative;
+  background-size: cover;
+  padding: 0;
+  background-image: asset-url('carosello.jpg');
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+*/
 /* Contact Section
 --------------------------------*/
+
+
 #contact {
   padding: 30px 0;
 }

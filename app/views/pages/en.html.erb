@@ -102,7 +102,7 @@
               <li> ► a highly innovative method that facilitates the understanding of all the English Sentence Structures, tested and approved by hundreds of students from all over the world</li>
               <li> ► based on an easy mathematical scheme divided by 4 of all the English Structures and verb tenses. It means learn once and for all! </li>
               <li> ► the result of research, insights and teaching practice achieved from my 15 years of teaching English to International students</li>
-              <li> ► every course of the <span id="forenglish">4 for English</span> <span id="ischool"> School</span> is based on this method. Choose the best one for you! <br><span id="forenglish"><u>My book will be soon available on sale</u> </span></li>
+              <li> ► every course of the <span id="forenglish">4 for English</span> <span id="ischool"> School</span> is based on this method. Choose the best one! <br><span id="forenglish"><u>My book will be soon available on sale</u> </span></li>
             </ul>
 
           </div>
@@ -293,7 +293,7 @@
 
           <div class="testimonial-item">
             <p>
-              "Enrolling to English schools represent a new challenge every year. This year I had a new teacher from NY, Frances. I have found her explanation very clear and methods of teaching very useful and efficient. Every lesson was different from the other. It was very interesting and never boring"
+              "Enrolling to English schools represents a new challenge every year. This year I had a new teacher from NY, Frances. I have found her explanation very clear and methods of teaching very useful and efficient. Every lesson was different from the other. It was very interesting and never boring"
             </p>
             <h6>Andrea</h6>
             <h4><strong>Student</strong></h4>
@@ -386,7 +386,7 @@
               <p align="justify"> Frances grew up and studied in <strong>New York (USA)</strong>. She is qualified in teaching English as a second language - ESL English. She has also achieved the certification <strong>CertTesol of the London Trinity College </strong> to teach internationally.
                 Her business background has brought her to take part in several International projects.<br><br>
                  She has taught English and Business English in Italy, Spain, Malta and UK, for the European Community, important Corporations, schools and well-known International Universities. She has numerous years of experience teaching English to learners worldwide.<br>
-                 Author of her book <strong><i>4 for English</i></strong>&copy; designed to help students of every level. Her book can also be used by teacher as a resource on which to base lessons. Now she is living in Italy where she continues her passion for teaching. <br><br>"<i>Teaching is not a profession: it's a passion. Without passion for the subject and the desire for your students to learn... the future of a student will resemble a sunset instead of a sunrise</i>"<p>
+                 Author of her book <strong><i>4 for English</i></strong>&copy; designed to help students of every level. Her book can also be used by teachers as a resource on which to base lessons. Now she is living in Italy where she continues her passion for teaching. <br><br>"<i>Teaching is not a profession: it's a passion. Without passion for the subject and the desire for your students to learn... the future of a student will resemble a sunset instead of a sunrise</i>"<p>
             </div>
           </div>
 
@@ -400,42 +400,96 @@
         <div class="section-header">
           <h2>Esperiences</h2>
         </div>
-        <div class="row justify-content-around">
-          <div class="col-4">
-            <%= image_tag("class1.jpg", height: 300,  width: 450, alt: "young english students photo") %>
-          </div>
-          <div class="col-5">
-            <%= image_tag("class2.jpg", height: 300, width: 450, alt: "young english students photo") %>
-          </div>
-        </div>
-        <br>
-        <div class="row justify-content-around">
-          <div class="col-4">
-            <%= image_tag("class3.jpg", height: 300, width: 450, alt: "adult english students photo") %>
-          </div>
-          <div class="col-5">
-            <%= image_tag("class5.jpg", height: 300, width: 450, alt: "young english students photo") %>
-          </div>
-        </div>
-        <br>
-        <div class="row justify-content-around">
-          <div class="col-3">
-            <%= image_tag("class4.jpg", height: 300, alt: "adult english students photo") %>
-          </div>
-          <div class="col-3">
-            <%= image_tag("class6.jpg", height: 300, alt: "english teachers") %>
-          </div>
-          <div class="col-3">
-            <%= image_tag("class7.jpg", height: 300, alt: "young english students photo") %>
-          </div>
-        </div>
-        <br>
-        <div class="row justify-content-around">
-          <div class="col-4">
-            <%= image_tag("class8.jpg", height: 300, width:450, alt: "englis teacher") %>
-          </div>
-          <div class="col-5">
-            <%= image_tag("class9.jpg", height: 300, width:450, alt: "adult english students photo. Do you speak English?") %>
+        <div class="container carosello">
+          <div id="carouselExampleControls" class="carousel slide mb-4" data-ride="carousel" style="width:55%; margin:auto; background:black; padding:7px;">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <%= image_tag("class1.jpg", class: "d-block w-100", alt: "fotografia giovani studenti di inglese") %>
+              </div>
+              <div class="carousel-item">
+                <%= image_tag("class2.jpg", class: "d-block w-100", alt: "fotografia giovani studenti di inglese") %>
+              </div>
+              <div class="carousel-item">
+                <%= image_tag("class3.jpg", class: "d-block w-100", alt: "fotografia studenti militari di inglese") %>
+              </div>
+              <div class="carousel-item">
+                <%= image_tag("class4.jpg", class: "d-block w-100", alt: "fotografia studenti adulti di inglese") %>
+              </div>
+              <div class="carousel-item">
+                <%= image_tag("class5.jpg", class: "d-block w-100", alt: "fotografia giovani studenti di inglese") %>
+              </div>
+              <div class="carousel-item">
+                <%= image_tag("class6.jpg", class: "d-block w-100", alt: "fotografia insegnanti di inglese") %>
+              </div>
+              <div class="carousel-item">
+                <%= image_tag("class7.jpg", class: "d-block w-100", alt: "fotografia giovani studenti di inglese") %>
+              </div>
+              <div class="carousel-item">
+                <%= image_tag("class8.jpg", class: "d-block w-100", alt: "fotografia Frances Gallito") %>
+              </div>
+              <div class="carousel-item">
+                <%= image_tag("class9.jpg", class: "d-block w-100", alt: "fotografia studenti adulti di inglese. Do you speak English?") %>
+              </div>
+              <div class="carousel-item">
+                <%= image_tag("class11.jpg", class: "d-block w-100", alt: "fotografia studenti adulti di inglese. Do you speak English?") %>
+              </div>
+              <div class="carousel-item">
+                <%= image_tag("class12.jpg", class: "d-block w-100", alt: "fotografia studenti adulti di inglese. Do you speak English?") %>
+              </div>
+              <div class="carousel-item">
+                <%= image_tag("class13.jpg", class: "d-block w-100", alt: "fotografia studenti adulti di inglese. Do you speak English?") %>
+              </div>
+              <div class="carousel-item">
+                <%= image_tag("class14.jpg", class: "d-block w-100", alt: "fotografia studenti adulti di inglese. Do you speak English?") %>
+              </div>
+              <div class="carousel-item">
+                <%= image_tag("class15.jpg", class: "d-block w-100", alt: "fotografia studenti adulti di inglese. Do you speak English?") %>
+              </div>
+              <div class="carousel-item">
+                <%= image_tag("class16.jpg", class: "d-block w-100", alt: "fotografia studenti adulti di inglese. Do you speak English?") %>
+              </div>
+              <div class="carousel-item">
+                <%= image_tag("class18.jpg", class: "d-block w-100", alt: "fotografia studenti adulti di inglese. Do you speak English?") %>
+              </div>
+              <div class="carousel-item">
+                <%= image_tag("class21.jpg", class: "d-block w-100", alt: "fotografia studenti adulti di inglese. Do you speak English?") %>
+              </div>
+              <div class="carousel-item">
+                <%= image_tag("class22.jpg", class: "d-block w-100", alt: "fotografia studenti adulti di inglese. Do you speak English?") %>
+              </div>
+              <div class="carousel-item">
+                <%= image_tag("class23.jpg", class: "d-block w-100", alt: "fotografia studenti adulti di inglese. Do you speak English?") %>
+              </div>
+              <div class="carousel-item">
+                <%= image_tag("class24.jpg", class: "d-block w-100", alt: "fotografia studenti adulti di inglese. Do you speak English?") %>
+              </div>
+              <div class="carousel-item">
+                <%= image_tag("class25.jpg", class: "d-block w-100", alt: "fotografia studenti adulti di inglese. Do you speak English?") %>
+              </div>
+              <div class="carousel-item">
+                <%= image_tag("class26.jpg", class: "d-block w-100", alt: "fotografia studenti adulti di inglese. Do you speak English?") %>
+              </div>
+              <div class="carousel-item">
+                <%= image_tag("class27.jpg", class: "d-block w-100", alt: "fotografia studenti adulti di inglese. Do you speak English?") %>
+              </div>
+              <div class="carousel-item">
+                <%= image_tag("class28.jpg", class: "d-block w-100", alt: "fotografia studenti adulti di inglese. Do you speak English?") %>
+              </div>
+              <div class="carousel-item">
+                <%= image_tag("class29.jpg", class: "d-block w-100", alt: "fotografia studenti adulti di inglese. Do you speak English?") %>
+              </div>
+              <div class="carousel-item">
+                <%= image_tag("class30.jpg", class: "d-block w-100", alt: "fotografia studenti adulti di inglese. Do you speak English?") %>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
           </div>
         </div>
       </div>
