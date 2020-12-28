@@ -46,7 +46,7 @@
 
 
       <div id="logo" class="pull-left">
-        <%= image_tag("logo.jpg", size: "70x60", id: "logo", alt: "New York") %>
+        <%= link_to image_tag("logo.jpg", size: "90x80", id: "logo", alt: "4 for English logo"), root_path %>
       </div>
 
       <nav id="nav-menu-container">
@@ -116,69 +116,64 @@
       <div class="container">
         <div class="section-header">
           <h2>Corsi</h2>
-          <p>Per coprire tutte le possibili esigenze dei suoi studenti, la <span id="forenglish">4 for English</span> <span id="ischool"> School</span> offre diverse tipologie di corsi. <br> Cosa aspetti? Seleziona il corso che ti interessa. </p>
+          <p>Per coprire tutte le possibili esigenze dei suoi studenti, la <span id="forenglish">4 for English</span> <span id="ischool"> School</span> offre diverse tipologie di corsi.<br> Cosa aspetti? Seleziona il corso che ti interessa. </p>
         </div>
-
         <div class="row">
-
-          <div class="col-lg-6">
-            <div id= "online" class="box">
-              <div class="icon"><i class="fa fa-bar-chart"></i></div>
-              <h4 class="title"><%= link_to "Corsi online privati per singoli o per gruppi", lessons_path %></h4>
-              <p class="description"> Gli argomenti affrontati durante il corso saranno concordati a seguito di un breve incontro conoscitivo.
-                <br> <a href="#contact"> Scrivi alla insegnante </a> </p>
+          <div class="card-deck mb-4">
+            <div class="card courses">
+              <%= image_tag("online.jpg", alt: "Lezioni private di Inglese", class: "card-img-top") %>
+              <div class="card-body">
+                <h5 class="card-title"><%= link_to "Corsi online privati per singoli o per gruppi", lessons_path %> </h5>
+                <p class="card-text">Gli argomenti affrontati durante il corso saranno concordati a seguito di un breve incontro conoscitivo</p>
+                <p class="card-text"><small class="text-muted float-right"><a href="#contact">Scrivi alla insegnante ►</a></small></p>
+              </div>
+            </div>
+            <div class="card courses">
+              <%= image_tag("business.jpg", alt: "Business English", class: "card-img-top") %>
+              <div class="card-body">
+                <h5 class="card-title"><%= link_to "Business English", lessons_path %> </h5>
+                <br>
+                <p class="card-text">Corsi di Inglese specializzati per rispondere alle esigenze linguistiche delle aziende italiane e internazionali</p>
+                <p class="card-text"><small class="text-muted float-right"><a href="mailto:school@4forenglish.com">Scrivi alla insegnante ►</a></small></p>
+              </div>
+            </div>
+            <div class="card courses">
+              <%= image_tag("travel.jpg", alt: "Lezioni di inglese per viaggiare", class: "card-img-top") %>
+              <div class="card-body">
+                <h5 class="card-title"><%= link_to "Inglese per viaggiare", lessons_path %> </h5>
+                <br>
+                <p class="card-text">Che sia un viaggio di lavoro o una vacanza, l'Inglese è una risorsa indispensabile</p>
+                <p class="card-text"><small class="text-muted float-right"><a href="#contact">Scrivi alla insegnante ►</a></small></p>
+              </div>
+            </div>
+            <div class="card courses">
+              <%= image_tag("italian.jpg", alt: "Course of Italian phrases and gestures", class: "card-img-top") %>
+              <div class="card-body">
+                <h5 class="card-title"><%= link_to "Course of Italian phrases and gestures", italian_course_path %> </h5>
+                <p class="card-text">Have you ever wished to speak the romantic italian language and know the meaning of their gestures?</p>
+                <p class="card-text"><small class="text-muted float-right"><a href="#contact">Contact the teacher ►</a></small></p>
+              </div>
+            </div>
+            <div class="card courses">
+              <%= image_tag("teacher.jpg", alt: "Corsi di Inglese per insegnanti CLIL", class: "card-img-top") %>
+              <div class="card-body">
+                <h5 class="card-title"><%= link_to "4 for English per insegnanti", lessons_path %> </h5>
+                <br>
+                <p class="card-text">Corso disegnato per la formazione dei docenti - progetto CLIL (<i>Content and Language Integrated Learning</i>)</p>
+                <p class="card-text"><small class="text-muted float-right"><a href="#contact">Scrivi alla insegnante ►</a></small></p>
+              </div>
+            </div>
+            <div class="card courses">
+              <%= image_tag("full.jpg", alt: "Full immersion inglese", class: "card-img-top") %>
+              <div class="card-body">
+                <h5 class="card-title">Full immersion </h5>
+                <br>
+                <p class="card-text">Tour guidati, trekking, yoga, cucina, arte, B&B. Ovviamente tutto in Inglese!<br> <strong><i>Coming soon...</i></strong></p>
+                <p class="card-text"><small class="text-muted float-right"><a href="#contact">Scrivi alla insegnante ►</a></small></p>
+              </div>
             </div>
           </div>
-
-          <div class="col-lg-6">
-            <div id= "business" class="box">
-              <div class="icon"><i class="fa fa-picture-o"></i></div>
-              <h4 class="title"><%= link_to "Business English per le aziende", lessons_path %></h4>
-              <p class="description">Corsi di Inglese dedicati e specializzati per rispondere alle esigenze linguistiche delle aziende italiane e internazionali.
-              <br><strong>Se sei un'azienda</strong>, scrivi <a href="mailto:school@4forenglish.com">qua</a> per maggiori informazioni. </p>
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <div id= "travel" class="box">
-              <div class="icon"><i class="fa fa-map"></i></div>
-              <h4 class="title"><%= link_to "Inglese per viaggiare", lessons_path %></h4>
-              <p class="description">Che sia un viaggio di lavoro o una vacanza, l'Inglese è una risorsa indispensabile. Il corso è studiato per fornire l'adeguata conoscenza della lingua Inglese nelle diverse situazioni: aeroporti, alberghi, ristoranti, muoversi in città...
-              <br> <a href="#contact"> Scrivi alla insegnante </a> </p>
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <div id="italiano" class="box">
-              <div class="icon"><i class="fa fa-map"></i></div>
-              <h4 class="title"><%= link_to "Course of Italian words and gestures", italian_course_path %></h4>
-              <p class="description"> Have you ever wished to speak the romantic Italian language? And to know the meaning of all the Italian fantastic gestures? Here is a beginner course for you!
-              <br> <a href="#contact"> Contact me to start </a>  </p>
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <div id= "next" class="box">
-              <div class="icon"><i class="fa fa-shopping-bag"></i></div>
-              <h4 class="title"><a href="">4 for English Masterclass</a></h4>
-              <p class="description">Scegli il pacchetto adatto al tuo livello. Ogni pacchetto contiene lezioni video, esercizi da svolgere con soluzioni e spiegazioni.
-              <br>
-                <a href="#call-to-action"> Fissa un colloquio con la insegnante per capire il tuo livello </a>
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <div id= "next" class="box">
-              <div class="icon"><i class="fa fa-map"></i></div>
-              <h4 class="title"><a href="">Full immersion</a></h4>
-              <p class="description"> Vasto programma di attività disegnato per rendere fluente la conversazione in lingua Inglese, con possibilità di tour guidati per visitare luoghi suggestivi. Ovviamente, tutto in Inglese!
-              <br>
-               Per maggiori dettagli <a href="#"> clicca qui </a></p>
-            </div>
-          </div>
-
         </div>
-
       </div>
     </section><!-- End Services Section -->
 

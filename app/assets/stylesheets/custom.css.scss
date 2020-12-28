@@ -68,11 +68,11 @@ h1, h2, h3, h4, h5, h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  padding: 18px 0;
+  padding: 0;
   height: 80px;
   z-index: 997;
   background: #fff;
-  box-shadow: 0px 6px 9px 0px rgba(0, 0, 0, 0.06);
+  box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.06);
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
@@ -99,7 +99,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #logo {
   position: relative;
-  top: -5px;
+  top: 0px;
 }
 
 
@@ -111,7 +111,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #intro {
   width: 100%;
-  height: 60vh;
+  height: 75vh;
   position: relative;
   background-size: cover;
   padding: 0;
@@ -228,22 +228,24 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-
 /* Nav Meu Container */
 #nav-menu-container {
   float: right;
   margin: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 999px) {
   #nav-menu-container #logo{
   position: fixed;
+  }
+  .nav-menu{
+    display: none;
   }
 }
 
 /* Nav Meu Styling */
 .nav-menu a {
-  padding: 10px 8px;
+  padding: 28px 12px;
   text-decoration: none;
   display: inline-block;
   color: #555;
@@ -389,6 +391,8 @@ section {
   padding: 30px 0 0 0;
 }
 
+/*
+
 #services .box {
   padding: 40px;
   margin-bottom: 40px;
@@ -403,25 +407,6 @@ section {
   transform: translateY(-10px);
   -webkit-transform: translateY(-20px);
   -moz-transform: translateY(-20px);
-}
-
-#services .box .icon {
-  float: left;
-}
-
-#services .box .icon i {
-  color: black;
-  font-size: 65px;
-  transition: 0.5s;
-  line-height: 0;
-  margin-top: 22px;
-}
-
-#services .box .icon i:before {
-  background: linear-gradient(45deg, #CF132B 0%, #a3ebd5 100%);
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 #services .box h4 {
@@ -462,36 +447,53 @@ section {
     text-align: center;
   }
 }
+*/
 
-#business {
-  background-image: asset-url('business.jpg');
-  background-size: cover;
-  background-position: center;
+.card-title {
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #D31930;
 }
 
-#online {
-  background-image: asset-url('online.jpg');
-  background-size: cover;
-  background-position: center;
+.card-title:hover {
+  color: #194477;
 }
 
-#next {
-  background-image: asset-url('next.jpg');
-  background-size: cover;
-  background-position: 50% 100%;
+.card-text {
+  font-weight: 500;
+  margin-bottom: 20px;
+  line-height: 22px;
 }
 
-#italiano {
-  background-image: asset-url('italiano.jpg');
-  background-size: cover;
-  background-position: center;
+.courses {
+  padding: 5px;
+  margin-top: 30px;
+  background: #fff!important;
+  box-shadow: 10px 10px 15px rgba(73, 78, 92, 0.1);
+  transition: 0.4s;
+  min-width: 18rem;
+  max-height: 40rem;
 }
 
-#travel {
-  background-image: asset-url('travel.jpg');
-  background-size: cover;
-  background-position: center;
+.courses:hover {
+  box-shadow: 0px 0px 30px rgba(73, 78, 92, 0.15);
+  transform: translateY(-10px);
+  -webkit-transform: translateY(-20px);
+  -moz-transform: translateY(-20px);
 }
+
+.courses a {
+  color: #D31930;
+}
+
+.courses a:hover {
+  color: #194477;
+}
+
+.card-img-top {
+  height: 12.5rem;
+}
+
 
 /* Clients Section
 --------------------------------*/
@@ -508,7 +510,7 @@ section {
   max-width: 100%;
   opacity: 0.5;
   transition: 0.3s;
-  padding: 15px 0;
+  padding: 10px 0;
 }
 
 #clients img:hover {

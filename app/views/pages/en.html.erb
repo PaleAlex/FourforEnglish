@@ -46,7 +46,7 @@
 
 
       <div id="logo" class="pull-left">
-        <%= image_tag("logo.jpg", size: "70x60", id: "logo", alt: "New York") %>
+        <%= link_to image_tag("logo.jpg", size: "90x80", id: "logo", alt: "4 for English logo"), en_path %>
       </div>
 
       <nav id="nav-menu-container">
@@ -118,70 +118,68 @@
           <h2>Courses</h2>
           <p><span id="forenglish">4 for English</span> <span id="ischool"> School</span> offers different types of courses, meeting all the possible needs of the students. <br> What are you waiting for? Choose your best fit and join us. </p>
         </div>
-
         <div class="row">
-
-          <div class="col-lg-6">
-            <div id= "online" class="box">
-              <div class="icon"><i class="fa fa-bar-chart"></i></div>
-              <h4 class="title"><%= link_to "Online courses one-to-one or for groups", lessons_path %></h4>
-              <p class="description"> All the different topics will be discussed priorly and followed up after an introductive meeting with the teacher.
-                <br> <a href="#contact"> Contact the teacher </a> </p>
+          <div class="card-deck mb-4">
+            <div class="card courses">
+              <%= image_tag("online.jpg", alt: "Private English lessons", class: "card-img-top") %>
+              <div class="card-body">
+                <h5 class="card-title"><%= link_to "Online courses one-to-one or for groups", lessons_path %> </h5>
+                <p class="card-text">All the different topics will be discussed priorly and followed up after an introductive meeting with the teacher</p>
+                <br>
+                <p class="card-text"><small class="text-muted float-right"><a href="#contact">Contact the teacher ►</a></small></p>
+              </div>
+            </div>
+            <div class="card courses">
+              <%= image_tag("business.jpg", alt: "Business English", class: "card-img-top") %>
+              <div class="card-body">
+                <h5 class="card-title"><%= link_to "Business English", lessons_path %> </h5>
+                <br>
+                <p class="card-text">These specialized courses are thought to be personalized and proposed to companies of different fields</p>
+                <br>
+                <p class="card-text"><small class="text-muted float-right"><a href="mailto:school@4forenglish.com">Contact the teacher ►</a></small></p>
+              </div>
+            </div>
+            <div class="card courses">
+              <%= image_tag("travel.jpg", alt: "English lessons for travelling", class: "card-img-top") %>
+              <div class="card-body">
+                <h5 class="card-title"><%= link_to "English for travelling", lessons_path %> </h5>
+                <br>
+                <p class="card-text">If you are going on a holiday or on a business trip... English is fundamental. This course is studied to give you all the necessary tools to travel</p>
+                <p class="card-text"><small class="text-muted float-right"><a href="#contact">Contact the teacher ►</a></small></p>
+              </div>
+            </div>
+            <div class="card courses">
+              <%= image_tag("italian.jpg", alt: "Course of Italian phrases and gestures", class: "card-img-top") %>
+              <div class="card-body">
+                <h5 class="card-title"><%= link_to "Course of Italian phrases and gestures", italian_course_path %> </h5>
+                <p class="card-text">Have you ever wished to speak the romantic italian language and know the meaning of their gestures?</p>
+                <br>
+                <p class="card-text"><small class="text-muted float-right"><a href="#contact">Contact the teacher ►</a></small></p>
+              </div>
+            </div>
+            <div class="card courses">
+              <%= image_tag("teacher.jpg", alt: "English courses for CLIL project", class: "card-img-top") %>
+              <div class="card-body">
+                <h5 class="card-title"><%= link_to "4 for English for teachers", lessons_path %> </h5>
+                <br>
+                <p class="card-text">Course designed to help teachers of all subjects improve their English language using the 4 for English method</p>
+                <br>
+                <p class="card-text"><small class="text-muted float-right"><a href="#contact">Contact the teacher ►</a></small></p>
+              </div>
+            </div>
+            <div class="card courses">
+              <%= image_tag("full.jpg", alt: "Full immersion inglese", class: "card-img-top") %>
+              <div class="card-body">
+                <h5 class="card-title">Full immersion </h5><br>
+                <p class="card-text">Wide programme of activities including guided tours in the most suggestive Italian towns. Of course, all in English!<br><strong><i>Coming soon...</i></p>
+                <p class="card-text"><small class="text-muted float-right"><a href="#contact">Contact the teacher ►</a></small></p>
+              </div>
             </div>
           </div>
-
-          <div class="col-lg-6">
-            <div id= "business" class="box">
-              <div class="icon"><i class="fa fa-picture-o"></i></div>
-              <h4 class="title"><%= link_to "Business English", lessons_path %></h4>
-              <p class="description">These specialized courses are thought to be personalized and proposed to companies of different fields.
-              <br><strong>If you are a company</strong>, write <a href="mailto:school@4forenglish.com">here</a> for further info. </p>
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <div id= "travel" class="box">
-              <div class="icon"><i class="fa fa-map"></i></div>
-              <h4 class="title"><%= link_to "English for travelling", lessons_path %></h4>
-              <p class="description">If you are going on a holiday or on a business trip... English is fundamental. This course is studied to give you all the necessary tools to travel in every situation: airports, hotels, restaurants or just getting around.
-              <br> <a href="#contact"> Contact the teacher</a></p>
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <div id="italiano" class="box">
-              <div class="icon"><i class="fa fa-map"></i></div>
-              <h4 class="title"><%= link_to "Course of Italian words and gestures", italian_course_path %></h4>
-              <p class="description"> Have you ever wished to speak the romantic Italian language? And to know the meaning of all the Italian fantastic gestures? Here is a beginner course for you!
-              <br> <a href="#contact"> Contact me to start </a>  </p>
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <div id= "next" class="box">
-              <div class="icon"><i class="fa fa-shopping-bag"></i></div>
-              <h4 class="title"><a href="">4 for English Masterclass</a></h4>
-              <p class="description">Choose the best programme for your level of English. Each programme contains video-lessons and exercises with solutions and explanations.
-              <br>
-                <a href="#call-to-action"> Schedule a meeting with the teacher to estimate your English level </a>
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <div id= "next" class="box">
-              <div class="icon"><i class="fa fa-map"></i></div>
-              <h4 class="title"><a href="">Full immersion</a></h4>
-              <p class="description"> Wide programme of activities will be proposed to enchant your English conversation skills, including guided tours in the most suggestive italian towns. Of course, all in English!
-              <br>
-               Further info <a href="#"> here </a></p>
-            </div>
-          </div>
-
         </div>
-
       </div>
-    </section><!-- End Services Section -->
-
+    </section>
+    <!-- End Services Section -->
 
     <!-- ======= Clients Section ======= -->
     <section id="clients">
@@ -385,7 +383,7 @@
           <div class="col-lg-9 col-md-6">
             <div class="details">
 
-              <p align="justify"> Frances grow up and studied in <strong>New York (USA)</strong>. She is qualified in teaching English as a second language - ESL English. She has also achieved the certification <strong>CertTesol of the London Trinity College </strong> to teach internationally.
+              <p align="justify"> Frances grew up and studied in <strong>New York (USA)</strong>. She is qualified in teaching English as a second language - ESL English. She has also achieved the certification <strong>CertTesol of the London Trinity College </strong> to teach internationally.
                 Her business background has brought her to take part in several International projects.<br><br>
                  She has taught English and Business English in Italy, Spain, Malta and UK, for the European Community, important Corporations, schools and well-known International Universities. She has numerous years of experience teaching English to learners worldwide.<br>
                  Author of her book <strong><i>4 for English</i></strong>&copy; designed to help students of every level. Her book can also be used by teacher as a resource on which to base lessons. Now she is living in Italy where she continues her passion for teaching. <br><br>"<i>Teaching is not a profession: it's a passion. Without passion for the subject and the desire for your students to learn... the future of a student will resemble a sunset instead of a sunrise</i>"<p>
