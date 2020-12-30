@@ -317,7 +317,7 @@ section {
   padding-bottom: 20px;
 }
 
-/*.section-header h2::before {
+.section-header h2::before {
   content: '';
   position: absolute;
   display: block;
@@ -326,7 +326,7 @@ section {
   background: #CF132B;
   bottom: 0;
   left: 0;
-} */
+}
 
 .section-header p {
   padding: 0;
@@ -484,7 +484,8 @@ section {
   box-shadow: 10px 10px 15px rgba(73, 78, 92, 0.1);
   transition: 0.4s;
   min-width: 18rem;
-  max-height: 40rem;
+  max-width: 28rem;
+  max-height: 100%;
 }
 
 .courses:hover {
@@ -505,6 +506,7 @@ section {
 .card-img-top {
   height: 12.5rem;
 }
+
 
 
 /* Clients Section
@@ -674,7 +676,7 @@ section {
   background-repeat: no-repeat;
   background-position: center top;
 }
-*/
+
 /* Contact Section
 --------------------------------*/
 
