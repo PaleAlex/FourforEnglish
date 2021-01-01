@@ -135,7 +135,7 @@ h1, h2, h3, h4, h5, h6 {
 #intro .intro-content h2 {
   color: #133F73;
   margin-bottom: 22px;
-  font-size: 64px;
+  font-size: 62px;
   font-weight: 700;
 }
 
@@ -179,7 +179,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #CF132B;
 }
 
-@media (max-width: 686px) {
+@media (max-width: 600px) {
   #intro {
     height: 80vh;
   }
@@ -187,12 +187,12 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 38px;
   }
   #intro .intro-content h3 {
-    font-size: 18px;
+    font-size: 19px;
   }
   #intro .intro-content .btn-get-started, #intro .intro-content .btn-projects {
     font-size: 12px;
-    letter-spacing: 0.8px;
-    width: 55%;
+    letter-spacing: 0.7px;
+    width: 56%;
     padding: 6px 18px;
     margin: 5px;
     margin-bottom: 3px;
@@ -666,7 +666,7 @@ section {
 
 
 /* Carosello
---------------------------------
+-------------------------------- */
 
 .carosello{
   position: relative;
