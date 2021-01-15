@@ -27,15 +27,19 @@
   <!-- ======= Top Bar ======= -->
   <section id="topbar">
     <div class="container clearfix">
-    <!--  <div class="contact-info float-left">
-        <i class="fa fa-envelope-o"></i> <a href="mailto:francesgallito.ny@gmail.com">francesgallito.ny@gmail.com</a>
-        <i class="fa fa-phone"></i> +39 347-5628-822
-      </div> -->
+      <div class="contact-info float-left">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=example.org" target="_blank">
+        <img src="https://www.spicey.it/img/facebook-share.jpg" width= "50" alt="facebook-share-button">
+        </a>
+        <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
+        <script type="IN/Share" data-url="https://www.4forenglish.com"></script>
+      </div>
       <div class="social-links float-right">
+        <%= rails_social_share_button_tag('Share to Facebook', :url => root_path, desc: '4 for English School') %>
+
+
         <strong>IT</strong> <%= link_to image_tag("bf.jpg", size: "20x20", alt: "British flag"), en_path %>
-        <!--
-        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a> -->
+
       </div>
     </div>
   </section><!-- End Top Bar-->

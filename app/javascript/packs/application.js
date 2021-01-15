@@ -5,6 +5,7 @@
 //= require_tree .
 //= require jquery
 //= require jquery_ujs
+//= require rails-social-share-button
 require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
