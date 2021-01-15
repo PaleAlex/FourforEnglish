@@ -28,18 +28,15 @@
   <section id="topbar">
     <div class="container clearfix">
       <div class="contact-info float-left">
-        <a href="https://www.facebook.com/sharer/sharer.php?u=example.org" target="_blank">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=4forenglish.com" target="_blank">
         <img src="https://www.spicey.it/img/facebook-share.jpg" width= "50" alt="facebook-share-button">
         </a>
         <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
         <script type="IN/Share" data-url="https://www.4forenglish.com"></script>
       </div>
       <div class="social-links float-right">
-        <%= rails_social_share_button_tag('Share to Facebook', :url => root_path, desc: '4 for English School') %>
-
-
+        <%= rails_social_share_button_tag(url: "https://4forenglish.com")%>
         <strong>IT</strong> <%= link_to image_tag("bf.jpg", size: "20x20", alt: "British flag"), en_path %>
-
       </div>
     </div>
   </section><!-- End Top Bar-->
