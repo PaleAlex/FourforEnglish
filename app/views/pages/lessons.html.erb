@@ -24,17 +24,18 @@
 
 
   <!-- ======= Top Bar ======= -->
-  <section id="topbar" class="d-none d-lg-block">
+  <section id="topbar">
     <div class="container clearfix">
-    <!--<div class="contact-info float-left">
-        <i class="fa fa-envelope-o"></i> <a href="mailto:francesgallito.ny@gmail.com">francesgallito.ny@gmail.com</a>
-        <i class="fa fa-phone"></i> +39 347-5628-822
-      </div> -->
+      <div class="contact-info float-left">
+        <strong>↪ </strong><a href="https://www.facebook.com/sharer/sharer.php?u=4forenglish.com/lessons" target="_blank">
+        <img src="https://www.spicey.it/img/facebook-share.jpg" width= "51" alt="facebook-share-button" class="share">
+        </a>
+        <span class= "share"><script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_EN</script>
+        <script type="IN/Share" data-url="https://www.4forenglish.com/lessons"></script> </span>
+        <span id="forenglish"> 4 for English</span> <span id="ischool"> School!</span> <strong> ↩</strong>
+      </div>
       <div class="social-links float-right">
-
-        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+        <%= link_to image_tag("bf.jpg", size: "20x20", alt: "British flag"), en_path %>
       </div>
     </div>
   </section><!-- End Top Bar-->
@@ -45,7 +46,7 @@
 
 
       <div id="logo" class="pull-left">
-        <%= link_to image_tag("logo.jpg", size: "90x80", id: "logo", alt: "4 for English logo"), root_path %>
+        <%= link_to image_tag("logo.jpg", size: "100x90", id: "logo", alt: "4 for English logo"), root_path %>
       </div>
 
       <nav id="nav-menu-container">

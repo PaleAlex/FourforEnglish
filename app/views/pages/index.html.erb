@@ -28,14 +28,14 @@
   <section id="topbar">
     <div class="container clearfix">
       <div class="contact-info float-left">
-        <a href="https://www.facebook.com/sharer/sharer.php?u=4forenglish.com" target="_blank">
-        <img src="https://www.spicey.it/img/facebook-share.jpg" width= "50" alt="facebook-share-button">
+        <strong>↪ </strong><a href="https://www.facebook.com/sharer/sharer.php?u=4forenglish.com" target="_blank">
+        <img src="https://www.spicey.it/img/facebook-share.jpg" width= "51" alt="facebook-share-button" class="share">
         </a>
-        <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
-        <script type="IN/Share" data-url="https://www.4forenglish.com"></script>
+        <span class= "share"><script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_EN</script>
+        <script type="IN/Share" data-url="https://www.4forenglish.com"></script> </span>
+        <span id="forenglish"> 4 for English</span> <span id="ischool"> School!</span> <strong> ↩</strong>
       </div>
       <div class="social-links float-right">
-        <%= rails_social_share_button_tag(url: "https://4forenglish.com")%>
         <strong>IT</strong> <%= link_to image_tag("bf.jpg", size: "20x20", alt: "British flag"), en_path %>
       </div>
     </div>
@@ -46,7 +46,7 @@
     <div class="container">
 
       <div id="logo" class="pull-left">
-        <%= link_to image_tag("logo.jpg", size: "90x80", id: "logo", alt: "4 for English logo"), root_path %>
+        <%= link_to image_tag("logo.jpg", size: "100x90", id: "logo", alt: "4 for English logo"), root_path %>
       </div>
 
       <nav id="nav-menu-container">
