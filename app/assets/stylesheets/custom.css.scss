@@ -66,15 +66,32 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .share {
+  position: relative;
+  top: 1.5px;
+  -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+
+}
+
+.share:hover {
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+  transform: rotate(360deg);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.IN-widget {
   -webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
 }
 
-.share:hover {
-	-webkit-filter: grayscale(0);
-	filter: grayscale(0);
+.IN-widget:hover {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
   transform: rotate(360deg);
   transition: all 0.3s ease-in-out 0s;
 }
