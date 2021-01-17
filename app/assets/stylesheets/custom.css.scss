@@ -44,7 +44,7 @@ h1, h2, h3, h4, h5, h6 {
 #topbar {
   padding: 6px 0;
   border-bottom: 1px solid #eee;
-  font-size: 14px;
+  font-size: 12px;
   background-image: asset-url('2.jpg');
   background-position: left left;
 }
@@ -68,30 +68,19 @@ h1, h2, h3, h4, h5, h6 {
 .share {
   position: relative;
   top: 1.5px;
-  -webkit-filter: grayscale(100%);
-	filter: grayscale(100%);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-
+  transition: .3s ease-in-out;
 }
 
 .share:hover {
-	-webkit-filter: grayscale(0);
-	filter: grayscale(0);
   transform: rotate(360deg);
   transition: all 0.3s ease-in-out 0s;
 }
 
 .IN-widget {
-  -webkit-filter: grayscale(100%);
-	filter: grayscale(100%);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
 }
 
 .IN-widget:hover {
-  -webkit-filter: grayscale(0);
-  filter: grayscale(0);
   transform: rotate(360deg);
   transition: all 0.3s ease-in-out 0s;
 }
@@ -111,12 +100,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header h1 {
-  font-size: 42px;
   margin: auto;
   padding: 0;
   line-height: 1;
   font-family: "Montserrat", sans-serif;
-  font-weight: 700;
 }
 
 #header h1 a {
@@ -240,6 +227,7 @@ h1, h2, h3, h4, h5, h6 {
   list-style: none;
 }
 
+
 .nav-menu ul {
   position: absolute;
   display: none;
@@ -269,22 +257,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-menu ul li {
   min-width: 180px;
-}
-
-
-/* Nav Meu Container */
-#nav-menu-container {
-  float: right;
-  margin: 0;
-}
-
-@media (max-width: 999px) {
-  #nav-menu-container #logo{
-  position: fixed;
-  }
-  .nav-menu{
-    display: none;
-  }
 }
 
 /* Nav Meu Styling */
@@ -324,6 +296,21 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-menu ul li:hover > a {
   color: #CF132B;
+}
+
+/* Nav Meu Container */
+#nav-menu-container {
+  float: right;
+  margin: 0;
+}
+
+@media (max-width: 999px) {
+  #nav-menu-container #logo{
+  position: fixed;
+  }
+  .nav-menu{
+    display: none;
+  }
 }
 
 /*--------------------------------------------------------------
