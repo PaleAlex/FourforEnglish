@@ -1,6 +1,10 @@
 class PagesController < ApplicationController
 
   def index
+    http_cache_forever(public: true) do
+      render
+    end
+
   end
 
   def present
@@ -13,6 +17,9 @@ class PagesController < ApplicationController
   end
 
   def en
+    http_cache_forever(public: true) do
+      render
+    end
   end
 
 end
