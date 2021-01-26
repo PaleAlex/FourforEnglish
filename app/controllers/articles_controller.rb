@@ -8,11 +8,11 @@ http_basic_authenticate_with name: "Mamma", password: "tantiauguri", only: :inde
   def create
     @article = Article.new(whitelist_article_params)
 	  if @article.save
-      flash[:notice] = "Grazie per averci scritto. Il messaggio è stato inviato con successo. La teacher ti risponderà entro 24 ore."
 	    redirect_to root_path
+      flash[:notice] = "Grazie per averci scritto. Il messaggio è stato inviato con successo. La insegnante ti risponderà entro 24 ore"
     else
-      flash[:alert] = "ATTENZIONE! Non è stato possibile inviare il messaggio. Assicurati che tutti i campi siano compilati e la mail sia corretta. Grazie."
       redirect_to root_path
+      flash[:alert] = "ATTENZIONE! Non è stato possibile inviare il messaggio. Assicurati che tutti i campi siano compilati e la mail sia corretta. Grazie"
     end
   end
 
