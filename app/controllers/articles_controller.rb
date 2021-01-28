@@ -8,10 +8,10 @@ http_basic_authenticate_with name: "Mamma", password: "tantiauguri", only: :inde
   def create
     @article = Article.new(whitelist_article_params)
 	  if @article.save
-      flash[:notice] = "Grazie per averci scritto. Il messaggio è stato inviato con successo. La insegnante ti risponderà entro 24 ore"
+      flash[:notice] = "Thank you for writing us. The message has been sent successfully. The teacher will contact you soon"
       redirect_to root_path
     else
-      flash[:alert] = "ATTENZIONE! Non è stato possibile inviare il messaggio. Assicurati che tutti i campi siano compilati e la mail sia corretta. Grazie"
+      flash[:alert] = "Attention! Message not sent. Try again and be sure to do not leave empty fields/digit a wrong email"
       redirect_to root_path
     end
   end
@@ -19,7 +19,6 @@ http_basic_authenticate_with name: "Mamma", password: "tantiauguri", only: :inde
   def destroy
     @article = Article.find(params[:id])
     @article.destroy
-    flash[:notice] = "Messaggio cancellato"
     redirect_to articles_path
   end
 
