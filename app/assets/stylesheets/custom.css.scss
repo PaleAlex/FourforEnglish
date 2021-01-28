@@ -502,8 +502,8 @@ section {
   background: #fff!important;
   box-shadow: 10px 10px 15px rgba(73, 78, 92, 0.1);
   transition: 0.4s;
-  min-width: 18rem;
-  max-width: 28rem;
+  min-width: 20rem;
+  max-width: 26rem;
   max-height: 100%;
 }
 
@@ -550,7 +550,11 @@ section {
   opacity: 1;
 }
 
-
+@media (max-width: 999px) {
+  #clients img {
+    max-width: 50%;
+  }
+}
 
 /* Testimonials Section
 --------------------------------*/
