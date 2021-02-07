@@ -6,7 +6,10 @@ class PagesController < ApplicationController
   def present
   end
 
-  def lessons
+  def courses
+  end
+
+  def corsi
   end
 
   def italian

@@ -4,7 +4,8 @@ Rails.application.routes.draw do
   root 'pages#index'
 
   get 'a-present-for-you', to: 'pages#present'
-  get 'lessons', to: 'pages#lessons'
+  get 'corsi', to: 'pages#corsi'
+  get 'courses', to: 'pages#courses'
   get 'en', to: 'pages#en'
 
   resources :articles, only: [:new, :create, :index, :destroy]

@@ -33,7 +33,7 @@
       </div>
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li class="menu-active"><%= link_to "Home", root_path %> </li>
+          <li class="menu-active"><%= link_to "Home", en_path %> </li>
           <li><a href="#about">Teaching method</a></li>
           <li><a href="#services">Courses</a></li>
           <li><a href="#clients">Collaborations</a></li>
@@ -41,7 +41,7 @@
           <li class="menu-has-children"><a href="">More</a>
             <ul>
               <li><a href="#team">Who I am</a></li>
-              <li><%= link_to "Lessons", lessons_path %></li>
+              <li><%= link_to "Lessons", courses_path %></li>
               <li><%= link_to "Course of Italian words and gestures", italian_course_path %></li>
             </ul>
           </li>
@@ -93,7 +93,7 @@
             <div class="card courses">
               <%= image_tag("online.jpg", alt: "Private English lessons", class: "card-img-top") %>
               <div class="card-body">
-                <h5 class="card-title"><%= link_to "Online courses one-to-one or for groups", lessons_path %> </h5>
+                <h5 class="card-title"><%= link_to "Online courses one-to-one or for groups", courses_path %> </h5>
                 <p class="card-text">All the different topics will be discussed priorly and followed up after an introductive meeting with the teacher</p>
                 <br>
                 <p class="card-text"><small class="text-muted float-right"><a href="#contact">Contact the teacher ►</a></small></p>
@@ -102,7 +102,7 @@
             <div class="card courses">
               <%= image_tag("business.jpg", alt: "Business English", class: "card-img-top") %>
               <div class="card-body">
-                <h5 class="card-title"><%= link_to "Business English", lessons_path %> </h5>
+                <h5 class="card-title"><%= link_to "Business English", courses_path %> </h5>
                 <br>
                 <p class="card-text">These specialized courses are thought to be personalized and proposed to companies of different fields</p>
                 <br>
@@ -112,7 +112,7 @@
             <div class="card courses">
               <%= image_tag("travel.jpg", alt: "English lessons for travelling", class: "card-img-top") %>
               <div class="card-body">
-                <h5 class="card-title"><%= link_to "English for travelling", lessons_path %> </h5>
+                <h5 class="card-title"><%= link_to "English for travelling", courses_path %> </h5>
                 <br>
                 <p class="card-text">If you are going on a holiday or on a business trip... English is fundamental. This course is studied to give you all the necessary tools to travel</p>
                 <p class="card-text"><small class="text-muted float-right"><a href="#contact">Contact the teacher ►</a></small></p>
@@ -130,7 +130,7 @@
             <div class="card courses">
               <%= image_tag("teacher.jpg", alt: "English courses for CLIL project", class: "card-img-top") %>
               <div class="card-body">
-                <h5 class="card-title"><%= link_to "4 for English for teachers", lessons_path %> </h5>
+                <h5 class="card-title"><%= link_to "4 for English for teachers", courses_path %> </h5>
                 <br>
                 <p class="card-text">Course designed to help teachers of all subjects improve their English language using the 4 for English method</p>
                 <br>
