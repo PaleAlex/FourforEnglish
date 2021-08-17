@@ -10,6 +10,88 @@
 --------------------------------------------------------------*/
 @import 'bootstrap/dist/css/bootstrap';
 
+.cookieConsentContainer {
+
+	z-index: 999;
+
+	width: 350px;
+
+	min-height: 20px;
+
+	box-sizing: border-box;
+
+	padding: 30px 30px 30px 30px;
+
+	background: #232323;
+
+	overflow: hidden;
+
+	position: fixed;
+
+  bottom: 30px;
+
+	right: 30px;
+
+	display: none;
+
+}
+
+.cookieConsentContainer .cookieTitle a {
+
+	font-family: OpenSans, arial, "sans-serif";
+
+	color: #FFFFFF;
+
+	font-size: 22px;
+
+	line-height: 20px;
+
+	display: block;
+
+}
+
+.cookieConsentContainer .cookieDesc p {
+
+	margin: 0;
+
+	padding: 0;
+
+	font-family: OpenSans, arial, "sans-serif";
+
+	color: #FFFFFF;
+
+	font-size: 13px;
+
+	line-height: 20px;
+
+	display: block;
+
+	margin-top: 10px;
+
+} .cookieConsentContainer .cookieDesc a {
+
+	font-family: OpenSans, arial, "sans-serif";
+
+	color: #FFFFFF;
+
+	text-decoration: underline;
+
+}
+
+@media (max-width: 980px) {
+
+	.cookieConsentContainer {
+
+		bottom: 0px !important;
+
+		left: 0px !important;
+
+		width: 100%  !important;
+
+	}
+
+}
+
 body {
   background: #fff;
   color: #444;
@@ -209,12 +291,12 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 19.5px;
   }
   #intro .intro-content .btn-get-started, #intro .intro-content .btn-projects {
-    font-size: 12.5px;
-    letter-spacing: 0.7px;
-    width: 56%;
-    padding: 6px 18px;
+    font-size: 13px;
+    letter-spacing: 0.8px;
+    width: 60%;
+    padding: 7px 19px;
     margin: 5px;
-    margin-bottom: 4px;
+    margin-bottom: 9px;
   }
 }
 /*--------------------------------------------------------------

@@ -18,4 +18,7 @@ class PagesController < ApplicationController
   def en
   end
 
+  def eip
+  end
+
 end
