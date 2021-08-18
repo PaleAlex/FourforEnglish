@@ -25,7 +25,7 @@ import 'bootstrap'
 var purecookieTitle = "Cookies."; // Title
 var purecookieDesc = "By continuing the navigation in this website, you are automatically accepting the use of cookies. We use them just to ensure you to get the best experience here."; // Description
 var purecookieLink = '<a href="https://www.cookiesandyou.com/" target="_blank">More info</a>'; // Cookiepolicy link
-var purecookieButton = ""; // Button text
+var purecookieButton = '' // Button text
 // ---        --- //
 
 

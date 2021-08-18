@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   get 'corsi', to: 'pages#corsi'
   get 'courses', to: 'pages#courses'
   get 'en', to: 'pages#en'
-  get 'immersion', to: 'pages#eip'
+  get 'full-immersion', to: 'pages#eip'
 
   resources :articles, only: [:new, :create, :index, :destroy]
 
