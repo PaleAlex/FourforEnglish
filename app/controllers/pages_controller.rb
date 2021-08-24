@@ -12,9 +12,6 @@ class PagesController < ApplicationController
   def corsi
   end
 
-  def italian
-  end
-
   def en
   end
 

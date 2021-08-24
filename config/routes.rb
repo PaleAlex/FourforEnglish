@@ -11,5 +11,5 @@ Rails.application.routes.draw do
 
   resources :articles, only: [:new, :create, :index, :destroy]
 
-  get 'italian-course', to: 'pages#italian'
+  #get 'italian-course', to: 'pages#italian'
 end

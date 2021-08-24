@@ -42,7 +42,6 @@
             <ul>
               <li><a href="#team">Who I am</a></li>
               <li><%= link_to "Lessons", courses_path %></li>
-              <li><%= link_to "Course of Italian words and gestures", italian_course_path %></li>
             </ul>
           </li>
           <li><a href="#contact">Contact me</a></li>
@@ -100,7 +99,7 @@
               </div>
             </div>
             <div class="card courses">
-              <%= cl_image_tag("4forenglish/business_kkeqsj.jpg", cloud_name: 'dp5r9jn8g', alt: "Business English", class: "card-img-top") %>
+              <%= cl_image_tag("https://res.cloudinary.com/dp5r9jn8g/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1628599890/4forenglish/business_kkeqsj.jpg", cloud_name: 'dp5r9jn8g', alt: "Business English", class: "card-img-top") %>
               <div class="card-body">
                 <h5 class="card-title"><%= link_to "Business English", courses_path %> </h5>
                 <br>
@@ -119,11 +118,10 @@
               </div>
             </div>
             <div class="card courses">
-              <%= cl_image_tag("4forenglish/italian_c6lujd.jpg", cloud_name: 'dp5r9jn8g', alt: "Course of Italian phrases and gestures", class: "card-img-top") %>
+              <%= cl_image_tag("https://res.cloudinary.com/dp5r9jn8g/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1629804004/4forenglish/Kids_gnqwu4.jpg", cloud_name: 'dp5r9jn8g', alt: "English for kids", class: "card-img-top") %>
               <div class="card-body">
-                <h5 class="card-title"><%= link_to "Course of Italian phrases and gestures", italian_course_path %> </h5>
-                <p class="card-text">Have you ever wished to speak the romantic Italian language and know the meaning of their gestures?</p>
-                <br>
+                <h5 class="card-title">English for Kids</h5><br>
+                <p class="card-text">Individual or Group Courses designed to lead kids and young learners to the English learning experience with a native teacher</p>
                 <p class="card-text"><small class="text-muted float-right"><a href="#contact">Contact the teacher ►</a></small></p>
               </div>
             </div>
