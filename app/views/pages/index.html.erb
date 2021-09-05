@@ -12,16 +12,7 @@
 </head>
 <body>
 
-    <div class="container">
-      <% flash.each do |type, msg| %>
-        <div class="alert <%= (type=='notice')? "alert-success": "alert-danger" %> alert-dismissible fade show" role="alert">
-        <%= msg %>
-        <button type= "button" class= "close" data-dismiss= "alert" aria-label= "Close">
-          <span aria-hidden= "true">&times;</span>
-        </button>
-        </div>
-      <% end %>
-    </div>
+
 
   <!-- ======= Top Bar ======= -->
   <section id="topbar">

@@ -12,7 +12,7 @@ http_basic_authenticate_with name: "Mamma", password: "tantiauguri", only: :inde
       redirect_to root_path
     else
       flash[:alert] = "Attention! Message not sent. Try again and be sure to do not leave empty fields/digit a wrong email"
-      redirect_to root_path
+      redirect_back(fallback_location: root_path)
     end
   end
 
