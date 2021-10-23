@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get 'courses', to: 'pages#courses'
   get 'en', to: 'pages#en'
   get 'full-immersion', to: 'pages#eip'
+  get 'masterclass', to: 'pages#mc'
 
   resources :articles, only: [:new, :create, :index, :destroy]
 

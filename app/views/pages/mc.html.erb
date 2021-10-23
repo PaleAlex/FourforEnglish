@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>The Coolest live English Masterclass! | 4 for English</title>
+  <meta content="Programmi intensivi per l'apprendimento veloce della lingua inglese articolati in una o due giornate con possibilità di alloggio a Pesaro. Vieni a scoprire di più!" name="description">
+  <meta name="author" content="Frances Gallito">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
+
+
+  <!-- =======================================================
+  * Template Name: Reveal - v2.1.0
+  * Template URL: https://bootstrapmade.com/reveal-bootstrap-corporate-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+
+  <!-- ======= Top Bar ======= -->
+  <section id="topbar">
+    <div class="container clearfix">
+      <div class="contact-info float-left">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=4forenglish.com" target="_blank">
+          <img src="https://www.spicey.it/img/facebook-share.jpg" width= "54.5" alt="facebook-share-button" class="share">
+        </a>
+        <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_EN</script>
+        <script type="IN/Share" data-url="https://www.4forenglish.com/masterclass"></script>
+      </div>
+    </div>
+  </section><!-- End Top Bar-->
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="container">
+      <div id="logo" class="pull-left">
+        <%= link_to image_tag("logo.jpg", size: "100x90", id: "logo", alt: "4 for English logo"), root_path %>
+      </div>
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><%= link_to "Home", root_path %> </li>
+          <li><a href="#about">Scopri di più</a></li>
+          <li><a href="#call-to-action">Iscriviti ora!</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header>
+  <!-- End Header -->
+  <div class="immersiontitle">
+    <h4 class="text-center mt-4"><strong> <span id="forenglish">4 FOR ENGLISH</span> PRESENTS:</strong></h4>
+    <h2 class="text-center"><strong>THE EXLUSIVE LIVE ENGLISH MASTERCLASS. <br><span id="forenglish">CHANGE YOUR WAY TO LEARN.</span> </h2>
+  </div>
+
+    <div class="container">
+      <span class="embed-responsive embed-responsive-16by9" style= "margin-left: auto; margin-right: auto;">
+        <%= cl_video_tag("https://res.cloudinary.com/dp5r9jn8g/video/upload/v1635025685/4forenglish/FRANCES_3_1_cyapfn.mp4", poster: "https://res.cloudinary.com/dp5r9jn8g/image/upload/v1635030022/4forenglish/4f_jjemks.png", controls: true,
+                          :fallback_content => "Your browser does not support HTML5 video tags." ) %>
+      </span>
+    </div>
+
+
+    <!-- ======= About Section ======= -->
+    <section id="about">
+      <div class="container mt-4">
+        <div class="row">
+          <div class="content">
+            <h2>Sono aperte le iscrizioni per la Masterclass <span id = "forenglish"> 4 for English</span></h2>
+            <ul>
+              <!--  <li> ► Il corso è composto da ore... quante lezioni, in quanto tempo, concentrato sul libro, recuperi, a chi è rivolto, altre info e contatti... -->
+              <li> ► La Masterclass comincerà al raggiungimento di 15 partecipanti iscritti. Inserisci il tuo nome e la mail qui sotto. Sarai ricontattato quanto prima dall'insegnate per confermare l'iscrizione
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End About Section -->
+    <section id="call-to-action">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <div class="form">
+              <%= form_with scope: :article, url: articles_path, class: "php-email-form", local: true do |f| %>
+                <div class="form-row">
+                  <div class="form-group col-md-4 mt-3">
+                    <%= f.text_field :name, id: "name", class: "form-control", placeholder: "Your Name" %>
+                  </div>
+                  <div class="form-group col-md-4 mt-3">
+                    <%= f.text_field :email, id: "email", class: "form-control", placeholder: "Your Email" %>
+                  </div>
+                  <div class="form-group col-md-4">
+                    <%= f.submit class: "cta-btn", style: "background-color: #081e5b; ", value: "Subscribe!" %>
+                  </div>
+                  <div class="form-group">
+                    <%= f.hidden_field :subject, id: "subject", class: "form-control", value:"Masterclass" %>
+                    <%= f.hidden_field :message, id: "message", class: "form-control", value:"Un iscritto" %>
+                  </div>
+                </div>
+              <% end %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Call To Action Section -->
+
+
+<br><br>
+
+
+  <%= render 'shared/footer' %>

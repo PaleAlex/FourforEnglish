@@ -1,6 +1,7 @@
 class PagesController < ApplicationController
 
   def index
+      @articles = Article.all
   end
 
   def present
@@ -16,6 +17,9 @@ class PagesController < ApplicationController
   end
 
   def eip
+  end
+
+  def mc
   end
 
 end

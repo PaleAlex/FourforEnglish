@@ -9,8 +9,57 @@
   <meta name="author" content="Frances Gallito">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script>
+  	$(document).ready(function(){
+    if (document.cookie.indexOf('modal_shown=') >= 0) {
+    } else {
+      $('#myModal').modal('show');
+      document.cookie = 'modal_shown=seen';  }
+  	});
+  </script>
 </head>
 <body>
+
+  <!-- modal -->
+  <div id="myModal" class="modal fade">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="forenglish">The COOLEST live English Masterclass is starting soon!</h5>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+				  <p>Check all the <%= link_to "info", masterclass_path %> and subscribe with your name and email <br><small> There are still <%= "#{15 - @articles.count} available seats before sold-out!" %> </small></p>
+          <div class="form">
+            <%= form_with scope: :article, url: articles_path, class: "php-email-form", local: true do |f| %>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <%= f.text_field :name, id: "name", class: "form-control", placeholder: "Your Name" %>
+                  <div class="validate"></div>
+                </div>
+                <div class="form-group col-md-6">
+                  <%= f.text_field :email, id: "email", class: "form-control", placeholder: "Your Email" %>
+                  <div class="validate"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <%= f.hidden_field :subject, id: "subject", class: "form-control", value:"Masterclass" %>
+                <%= f.hidden_field :message, id: "message", class: "form-control", value:"Un iscritto" %>
+              </div>
+              <div class="form-group row justify-content-center mb-4">
+                <%= f.submit class: "cta-btn", value: "Subscribe!" %>
+              </div>
+            <% end %>
+          </div>
+          <a href="https://www.instagram.com/4forenglish/" target =  _blank> <i class="fab fa-instagram"></i> </a>
+          <a href="https://www.facebook.com/groups/932630444273197" target =  _blank> <i class="fab fa-facebook"></i> </a>
+          <a href="https://www.youtube.com/channel/UCOUZz-L7FVWf2cRkM1u31Ug" target =  _blank> <i class="fab fa-youtube"></i> </a>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -39,6 +88,7 @@
       </div>
       <nav id="nav-menu-container">
         <ul class="nav-menu">
+          <li class="menu-active"><%= link_to "Masterclass!", masterclass_path %> </li>
           <li class="menu-active"><%= link_to "Home", root_path %> </li>
           <li><a href="#about">Metodo didattico</a></li>
           <li><a href="#services">Corsi</a></li>
