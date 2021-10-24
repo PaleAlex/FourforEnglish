@@ -27,11 +27,11 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="forenglish">The COOLEST live English Masterclass is starting soon!</h5>
+          <h5 class="modal-title" style = "color: #194477;"><strong>The English Masterclass is starting soon. That's Cool!</strong></h5>
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
         <div class="modal-body">
-				  <p>Check all the <%= link_to "info", masterclass_path %> and subscribe with your name and email <br><small> There are still <%= "#{15 - @articles.count} available seats before sold-out!" %> </small></p>
+				  <p>Check the <%= link_to "info", masterclass_path %> and subscribe with your name and email <br><small> There are still <%= "#{15 - @articles.count} available seats before sold-out!" %> </small></p>
           <div class="form">
             <%= form_with scope: :article, url: articles_path, class: "php-email-form", local: true do |f| %>
               <div class="form-row">
@@ -53,9 +53,9 @@
               </div>
             <% end %>
           </div>
-          <a href="https://www.instagram.com/4forenglish/" target =  _blank> <i class="fab fa-instagram"></i> </a>
-          <a href="https://www.facebook.com/groups/932630444273197" target =  _blank> <i class="fab fa-facebook"></i> </a>
-          <a href="https://www.youtube.com/channel/UCOUZz-L7FVWf2cRkM1u31Ug" target =  _blank> <i class="fab fa-youtube"></i> </a>
+          <a href="https://www.instagram.com/4forenglish/" target =  _blank> <i class="fab fa-instagram" style = "color: #e95950;"></i> </a>
+          <a href="https://www.facebook.com/groups/932630444273197" target =  _blank> <i class="fab fa-facebook" style = "color: #194477;"></i> </a>
+          <a href="https://www.youtube.com/channel/UCOUZz-L7FVWf2cRkM1u31Ug" target =  _blank> <i class="fab fa-youtube" style = "color: #CF132B;"></i> </a>
         </div>
       </div>
     </div>
