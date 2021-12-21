@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 
   root 'pages#index'
@@ -11,6 +12,6 @@ Rails.application.routes.draw do
   get 'masterclass', to: 'pages#mc'
 
   resources :articles, only: [:new, :create, :index, :destroy]
+  resources :posts
 
-  #get 'italian-course', to: 'pages#italian'
 end

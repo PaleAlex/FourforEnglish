@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Blog | 4 for English</title>
+  <meta content="Blog and useful contents and tips to share knowledge of the English language" name="description">
+  <meta name="author" content="Frances Gallito">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
+  <style>
+    .context {
+      width: 100%;
+      position: absolute;
+      top:44vh;
+      }
+    .context h1{
+      text-align: center;
+      color: #081e5b;
+      font-size: 50px;
+      }
+    .area{
+      background: url('https://res.cloudinary.com/dp5r9jn8g/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1639938166/4forenglish/cop_blog_kjy2fk.jpg') no-repeat center center fixed;
+      height:90vh;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      }
+  </style>
+
+  <!-- =======================================================
+  * Template Name: Reveal - v2.1.0
+  * Template URL: https://bootstrapmade.com/reveal-bootstrap-corporate-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="container">
+
+
+      <div id="logo" class="pull-left">
+        <%= link_to image_tag("logo.jpg", size: "100x90", id: "logo", alt: "4 for English logo"), root_path %>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><%= link_to "Home", root_path %> </li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header>
+
+  <!-- End Header -->
+
+  <div class="area" >
+    <div class="context">
+      <div class="container rounded" style="background-color: white; width: 50%">
+        <h1>Welcome to the <br/> <span id="forenglish">4 FOR ENGLISH</span> Blog</h1>
+      </div>
+   </div>
+  </div >
+
+  <section id="services">
+    <div class="container">
+      <div class="row">
+        <% @posts.each do |post| %>
+          <div class="card-deck mb-4 mx-auto">
+            <div class="card courses">
+              <%= cl_image_tag("4forenglish/blog#{rand(1..8)}", cloud_name: 'dp5r9jn8g', alt: "English", class: "card-img-top") %>
+              <div class="card-body">
+                <h5 class="card-title"><%= link_to post.title, post %> </h5>
+                <p class="card-text">Pubblicato il <%= post.created_at.strftime("%d %b. %Y") %></p>
+                <p class="card-text"><small class="text-muted float-right"><a href="#contact">Leggi di più ►</a></small></p>
+              </div>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+
+
+
+  </section><!-- End About Section -->
+
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact">
+      <div class="container mt-4">
+        <div class="section-header">
+          <u><h4>To know more or suggest me new topics, write me here</h4></u>
+        </div>
+        <%= render 'shared/form' %>
+      </div>
+    </section><!-- End Contact Section -->
+
+    <!-- ======= Footer ======= -->
+    <%= render 'shared/footer' %>
+    <!-- End Footer -->
+
+
+  </body>
+
+  </html>

@@ -1,27 +1,52 @@
-<h1>Messages listing page</h1>
+<div class="container">
+	<h1>Messages listing page</h1>
 
-	<table>
-    <thead>
-        <tr>
-          <th> Name</th>
-        	<th> Email</th>
-          <th> Subject</th>
-          <th> Message</th>
-          <th> Time</th>
-					<th> Delete </th>
-        </tr>
-    </thead>
+		<table>
+	    <thead>
+	        <tr>
+	          <th> Name</th>
+	        	<th> Email</th>
+	          <th> Subject</th>
+	          <th> Message</th>
+	          <th> Time</th>
+						<th> Delete </th>
+	        </tr>
+	    </thead>
 
-    <tbody>
-        <% @articles.each do |article| %>
-            <tr>
-              <td><%= article.name %></td>
-	            <td><%= article.email %></td>
-              <td><%= article.subject %></td>
-              <td><%= word_wrap(article.message, :line_width => 40) %></td>
-              <td><%= article.created_at.strftime("%d %b. %Y") %></td>
-							<td><%= link_to 'Delete', article_path(article.id), method: :delete %> </td>
-            </tr>
-        <% end %>
-    </tbody>
-</table>
+	    <tbody>
+	        <% @articles.each do |article| %>
+	            <tr>
+	              <td><%= article.name %></td>
+		            <td><%= article.email %></td>
+	              <td><%= article.subject %></td>
+	              <td><%= word_wrap(article.message, :line_width => 40) %></td>
+	              <td><%= article.created_at.strftime("%d %b. %Y") %></td>
+								<td><%= link_to 'Delete', article_path(article.id), method: :delete %> </td>
+	            </tr>
+	        <% end %>
+	    </tbody>
+	</table>
+
+
+	<br><br>
+	<h1>New Post</h1>
+	<br>
+	<div class="form">
+	  <%= form_with scope: :post, url: posts_path, class: "php-email-form", local: true do |f| %>
+	    <div class="form-row">
+				<div class="form-group">
+					<%= f.submit class: "button", value: "Pubblica" %>
+	      <div class="form-group">
+	        <%= f.text_field :title, id: "title", class: "form-control", placeholder: "Title" %>
+	        <div class="validate"></div>
+	      </div>
+	    <div class="form-group">
+	      <%= f.rich_text_area :description, id: "description", class: "form-control", placeholder: "Post" %>
+	      <div class="validate"></div>
+	    </div>
+
+	    <% end %>
+	    </div>
+		</div>
+	</div>
+</div>

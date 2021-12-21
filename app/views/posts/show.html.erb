@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Blog | 4 for English</title>
+  <meta content="Blog and useful contents and tips to share knowledge of the English language" name="description">
+  <meta name="author" content="Frances Gallito">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
+
+
+  <!-- =======================================================
+  * Template Name: Reveal - v2.1.0
+  * Template URL: https://bootstrapmade.com/reveal-bootstrap-corporate-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="container">
+
+
+      <div id="logo" class="pull-left">
+        <%= link_to image_tag("logo.jpg", size: "100x90", id: "logo", alt: "4 for English logo"), root_path %>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><%= link_to "Home", root_path %> </li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header>
+
+  <!-- End Header -->
+
+  <section id="services">
+    <h3 class= "text-center mt-2"><%= @post.title %></h3>
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col-8 mt-2">
+          <div class="card text-center shadow mb-5 bg-white rounded">
+            <div class="card-header font-italic">
+              <small> Pubblicato il <%= @post.created_at.strftime("%d %b. %Y") %> </small>
+              <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_EN</script>
+              <script type="IN/Share" data-url=<%="https://www.4forenglish.com/posts/#{@post.id}" %>></script>
+            </div>
+            <div class="card-body">
+              <div class="card-text text-left"><%= @post.description %> </div>
+            </div>
+          </div>
+          <div class="mb-3 text-center">
+            <%= link_to '[Read other posts]', posts_path, class: "text-secondary" %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- End About Section -->
+
+  <div class="container">
+    <h4 class= "text-center mt-4"> If you enjoyed this post, you might also like:</h4>
+    <div class="row">
+      <% @lim_posts.each do |post| %>
+        <div class="card-deck mb-4 mx-auto">
+          <div class="card courses">
+            <%= cl_image_tag("4forenglish/blog#{rand(1..9)}", cloud_name: 'dp5r9jn8g', alt: "English", class: "card-img-top") %>
+            <div class="card-body">
+              <h5 class="card-title"><%= link_to post.title, post %> </h5>
+              <p class="card-text">Pubblicato il <%= post.created_at.strftime("%d %b. %Y") %></p>
+              <p class="card-text"><small class="text-muted float-right"><a href="#contact">Leggi di più ►</a></small></p>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+
+    <!-- ======= Footer ======= -->
+  <%= render 'shared/footer' %>
+    <!-- End Footer -->
+
+
+  </body>
+</html>
