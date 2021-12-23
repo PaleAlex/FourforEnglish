@@ -10,7 +10,7 @@ class PostsController < ApplicationController
   # GET /posts/1
   def show
     posts = Post.all
-    @lim_posts = posts.sample(3)
+    @lim_posts = posts.sample(2)
   end
 
   # GET /posts/new

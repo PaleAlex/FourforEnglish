@@ -59,10 +59,10 @@
 
   <!-- End Header -->
 
-  <div class="area" >
+  <div class="area">
     <div class="context">
       <div class="container rounded" style="background-color: white; width: 50%">
-        <h1>Welcome to the <br/> <span id="forenglish">4 FOR ENGLISH</span> Blog</h1>
+        <h1 style="font-size:5vw;">Welcome to the <br/> <span id="forenglish">4 FOR ENGLISH</span> Blog</h1>
       </div>
    </div>
   </div >
@@ -76,9 +76,9 @@
               <%= cl_image_tag("4forenglish/blog#{rand(1..8)}", cloud_name: 'dp5r9jn8g', alt: "English", class: "card-img-top") %>
               <div class="card-body">
                 <h5 class="card-title"><%= link_to post.title, post %> </h5>
-                <p class="card-text">Pubblicato il <%= post.created_at.strftime("%d %b. %Y") %></p>
-                <p class="card-text"><small class="text-muted float-right"><a href="#contact">Leggi di più ►</a></small></p>
               </div>
+              <p class="card-text ml-3">Posted <%= post.created_at.strftime("%d %b. %Y") %></p>
+              <p class="card-text mr-1 mb-1"><small class="text-muted float-right"><a href="#contact">Read more ►</a></small></p>
             </div>
           </div>
         <% end %>
@@ -94,7 +94,7 @@
     <section id="contact">
       <div class="container mt-4">
         <div class="section-header">
-          <u><h4>To know more or suggest me new topics, write me here</h4></u>
+          <u><h4>To know more or suggest me new topics, contact me here</h4></u>
         </div>
         <%= render 'shared/form' %>
       </div>
