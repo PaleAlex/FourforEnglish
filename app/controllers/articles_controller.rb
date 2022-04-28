@@ -29,7 +29,7 @@ http_basic_authenticate_with name: "Mamma", password: "tantiauguri", only: :inde
   private
 
   def whitelist_article_params
-    params.require(:article).permit(:name, :subject, :message, :email)
+    params.require(:article).permit(:name, :subject, :message, :email, :check)
   end
 
 end
