@@ -1,5 +1,6 @@
 <div class="form">
   <%= form_with scope: :article, url: articles_path, class: "php-email-form", local: true do |f| %>
+    <%= invisible_captcha %>
     <div class="form-row">
       <div class="form-group col-md-6">
         <%= f.text_field :name, id: "name", class: "form-control", placeholder: "Your Name" %>
@@ -19,11 +20,11 @@
       <div class="validate"></div>
     </div>
 
-    <div class="form-group row justify-content-center">
+  <!-- <div class="form-group row justify-content-center">
       <div class="form-group col-md-2">
-        <%= f.text_field :check, id: "check", class: "form-control", placeholder: "Answer: 2+2= ?" %>
+        <#%= f.text_field :check, id: "check", class: "form-control", placeholder: "Answer: 2+2= ?" %>
       </div>
-    </div>
+    </div> -->
 
     <div class="form-group row justify-content-center">
       <%= f.submit class: "button", value: "Send Message" %>

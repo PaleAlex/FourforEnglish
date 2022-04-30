@@ -1,6 +1,6 @@
 class ArticlesController < ApplicationController
 http_basic_authenticate_with name: "Mamma", password: "tantiauguri", only: :index
-
+invisible_captcha only: [:new, :create]
   def new
     @article = Article.new
   end

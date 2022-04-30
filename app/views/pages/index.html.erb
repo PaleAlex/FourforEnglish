@@ -34,6 +34,7 @@
 				  <p>Check the <%= link_to "info", masterclass_path %> and subscribe with your name and email <br><small> There are still <%= "#{15 - @articles.count} available seats before sold-out!" %> </small></p>
           <div class="form">
             <%= form_with scope: :article, url: articles_path, class: "php-email-form", local: true do |f| %>
+              <%= invisible_captcha %>
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <%= f.text_field :name, id: "name", class: "form-control", placeholder: "Your Name" %>
@@ -88,6 +89,7 @@
       </div>
       <nav id="nav-menu-container">
         <ul class="nav-menu">
+          <li class="menu-active"><%= link_to "Masterclass!", masterclass_path %> </li>
           <li class="menu-active"><%= link_to "Home", root_path %> </li>
           <li><a href="#about">Metodo didattico</a></li>
           <li><a href="#services">Corsi</a></li>

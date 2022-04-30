@@ -95,6 +95,8 @@ GEM
       domain_name (~> 0.5)
     i18n (1.8.11)
       concurrent-ruby (~> 1.0)
+    invisible_captcha (2.0.0)
+      rails (>= 5.0)
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
@@ -239,6 +241,7 @@ DEPENDENCIES
   byebug
   capybara (>= 2.15)
   cloudinary
+  invisible_captcha
   jbuilder (~> 2.7)
   pg
   puma (~> 4.3)
